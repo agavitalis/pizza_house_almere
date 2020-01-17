@@ -14,19 +14,19 @@
 
         <!-- Bootstrap stylesheet -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <!-- <link href="{{ asset('app_assets/libs/bootstrap-4.0.0-dist/css/bootstrap.min.css') }}" rel="stylesheet"> -->
+        <!-- <link href="{{ secure_asset('app_assets/libs/bootstrap-4.0.0-dist/css/bootstrap.min.css') }}" rel="stylesheet"> -->
         <!-- icofont -->
-        <link href="{{ asset('app_assets/libs/icofont/css/icofont.css') }}" rel="stylesheet" type="text/css" />
+        <link href="{{ secure_asset('app_assets/libs/icofont/css/icofont.css') }}" rel="stylesheet" type="text/css" />
         <!-- crousel css -->
-        <link href="{{ asset('app_assets/libs/owlcarousel2/assets/owl.carousel.min.css') }}" rel="stylesheet" type="text/css" />
+        <link href="{{ secure_asset('app_assets/libs/owlcarousel2/assets/owl.carousel.min.css') }}" rel="stylesheet" type="text/css" />
         <!-- Animated Headlines css -->
-        <link href="{{ asset('app_assets/libs/animated-headlines/animated-headlines.css') }}" rel="stylesheet" type="text/css" />
+        <link href="{{ secure_asset('app_assets/libs/animated-headlines/animated-headlines.css') }}" rel="stylesheet" type="text/css" />
         <!-- mb.YTPlayer css -->
-        <link href="{{ asset('app_assets/libs/mb.YTPlayer/css/jquery.mb.YTPlayer.min.css') }}" rel="stylesheet" type="text/css" />
+        <link href="{{ secure_asset('app_assets/libs/mb.YTPlayer/css/jquery.mb.YTPlayer.min.css') }}" rel="stylesheet" type="text/css" />
         <!-- Switch Style css -->
-        <link href="{{ asset('app_assets/switch-style/switch-style.css') }}" rel="stylesheet" type="text/css"/>
+        <link href="{{ secure_asset('app_assets/switch-style/switch-style.css') }}" rel="stylesheet" type="text/css"/>
         <!-- Theme Stylesheet -->
-        <link href="{{ asset('app_assets/css/style.css') }}" rel="stylesheet" type="text/css"/>
+        <link href="{{ secure_asset('app_assets/css/style.css') }}" rel="stylesheet" type="text/css"/>
         <!-- Switch Color Style css -->
         <link href="#" data-style="styles" rel="stylesheet">
     </head>
@@ -102,7 +102,7 @@
                             <!-- Logo Start  -->
                             <div id="logo">
                                 <a href="index.html">
-                                    <img id="logo_img" class="img-fluid" src="{{ asset('app_assets/images/logo/logo.png') }}" alt="Logo Me" title="logo" />
+                                    <img id="logo_img" class="img-fluid" src="{{ secure_asset('app_assets/images/logo/logo.png') }}" alt="Logo Me" title="logo" />
                                 </a>
                             </div>
                             <!-- Logo End  -->
@@ -230,7 +230,7 @@
                                     <p>Delivery or Take Out</p>
                                 </li>
                             </ul>
-                            <img src="{{ asset('app_assets/images/lines.png') }}" alt="line" title="line" class="img-fluid" />
+                            <img src="{{ secure_asset('app_assets/images/lines.png') }}" alt="line" title="line" class="img-fluid" />
                         </div>
                     </div>
                 </div>
@@ -257,7 +257,7 @@
                                 <div class="item">
                                     <!-- Box Start -->
                                     <div class="box">
-                                        <a href="#"><img src="{{ asset('app_assets/images/dishes/01.jpg') }}" alt="image" title="image" class="img-fluid" /></a>
+                                        <a href="#"><img src="{{ secure_asset('app_assets/images/dishes/01.jpg') }}" alt="image" title="image" class="img-fluid" /></a>
                                         <div class="caption">
                                             <h4>Dish Name Here</h4>
                                             <span>Lorem ipsum is simply dummy text of the printing and type setting industry.</span>
@@ -269,7 +269,7 @@
                                 <div class="item">
                                     <!-- Box Start -->
                                     <div class="box">
-                                        <a href="#"><img src="{{ asset('app_assets/images/dishes/02.jpg') }}" alt="image" title="image" class="img-fluid" /></a>
+                                        <a href="#"><img src="{{ secure_asset('app_assets/images/dishes/02.jpg') }}" alt="image" title="image" class="img-fluid" /></a>
                                         <div class="caption">
                                             <h4>Dish Name Here</h4>
                                             <span>Lorem ipsum is simply dummy text of the printing and type setting industry.</span>
@@ -286,7 +286,7 @@
                                 <div class="item">
                                     <!-- Box Start -->
                                     <div class="box">
-                                        <a href="#"><img src="{{ asset('app_assets/images/dishes/03.jpg') }}" alt="image" title="image" class="img-fluid" /></a>
+                                        <a href="#"><img src="{{ secure_asset('app_assets/images/dishes/03.jpg') }}" alt="image" title="image" class="img-fluid" /></a>
                                         <div class="caption">
                                             <h4>Dish Name Here</h4>
                                             <span>Lorem ipsum is simply dummy text of the printing and type setting industry.</span>
@@ -298,7 +298,7 @@
                                 <div class="item">
                                     <!-- Box Start -->
                                     <div class="box">
-                                        <a href="#"><img src="{{ asset('app_assets/images/dishes/04.jpg') }}" alt="image" title="image" class="img-fluid" /></a>
+                                        <a href="#"><img src="{{ secure_asset('app_assets/images/dishes/04.jpg') }}" alt="image" title="image" class="img-fluid" /></a>
                                         <div class="caption">
                                             <h4>Dish Name Here</h4>
                                             <span>Lorem ipsum is simply dummy text of the printing and type setting industry.</span>
@@ -310,7 +310,7 @@
                                 <div class="item">
                                     <!-- Box Start -->
                                     <div class="box">
-                                        <a href="#"><img src="{{ asset('app_assets/images/dishes/05.jpg') }}" alt="image" title="image" class="img-fluid" /></a>
+                                        <a href="#"><img src="{{ secure_asset('app_assets/images/dishes/05.jpg') }}" alt="image" title="image" class="img-fluid" /></a>
                                         <div class="caption">
                                             <h4>Dish Name Here</h4>
                                             <span>Lorem ipsum is simply dummy text of the printing and type setting industry.</span>
@@ -322,7 +322,7 @@
                                 <div class="item">
                                     <!-- Box Start -->
                                     <div class="box">
-                                        <a href="#"><img src="{{ asset('app_assets/images/dishes/01.jpg') }}" alt="image" title="image" class="img-fluid" /></a>
+                                        <a href="#"><img src="{{ secure_asset('app_assets/images/dishes/01.jpg') }}" alt="image" title="image" class="img-fluid" /></a>
                                         <div class="caption">
                                             <h4>Dish Name Here</h4>
                                             <span>Lorem ipsum is simply dummy text of the printing and type setting industry.</span>
@@ -334,7 +334,7 @@
                                 <div class="item">
                                     <!-- Box Start -->
                                     <div class="box">
-                                        <a href="#"><img src="{{ asset('app_assets/images/dishes/02.jpg') }}" alt="image" title="image" class="img-fluid" /></a>
+                                        <a href="#"><img src="{{ secure_asset('app_assets/images/dishes/02.jpg') }}" alt="image" title="image" class="img-fluid" /></a>
                                         <div class="caption">
                                             <h4>Dish Name Here</h4>
                                             <span>Lorem ipsum is simply dummy text of the printing and type setting industry.</span>
@@ -346,7 +346,7 @@
                                 <div class="item">
                                     <!-- Box Start -->
                                     <div class="box">
-                                        <a href="#"><img src="{{ asset('app_assets/images/dishes/03.jpg') }}" alt="image" title="image" class="img-fluid" /></a>
+                                        <a href="#"><img src="{{ secure_asset('app_assets/images/dishes/03.jpg') }}" alt="image" title="image" class="img-fluid" /></a>
                                         <div class="caption">
                                             <h4>Dish Name Here</h4>
                                             <span>Lorem ipsum is simply dummy text of the printing and type setting industry.</span>
@@ -358,7 +358,7 @@
                                 <div class="item">
                                     <!-- Box Start -->
                                     <div class="box">
-                                        <a href="#"><img src="{{ asset('app_assets/images/dishes/04.jpg') }}" alt="image" title="image" class="img-fluid" /></a>
+                                        <a href="#"><img src="{{ secure_asset('app_assets/images/dishes/04.jpg') }}" alt="image" title="image" class="img-fluid" /></a>
                                         <div class="caption">
                                             <h4>Dish Name Here</h4>
                                             <span>Lorem ipsum is simply dummy text of the printing and type setting industry.</span>
@@ -370,7 +370,7 @@
                                 <div class="item">
                                     <!-- Box Start -->
                                     <div class="box">
-                                        <a href="#"><img src="{{ asset('app_assets/images/dishes/05.jpg') }}" alt="image" title="image" class="img-fluid" /></a>
+                                        <a href="#"><img src="{{ secure_asset('app_assets/images/dishes/05.jpg') }}" alt="image" title="image" class="img-fluid" /></a>
                                         <div class="caption">
                                             <h4>Dish Name Here</h4>
                                             <span>Lorem ipsum is simply dummy text of the printing and type setting industry.</span>
@@ -435,7 +435,7 @@
                                                 <!-- Box Start -->
                                                 <diV class="box">
                                                     <div class="image">
-                                                        <img src="{{ asset('app_assets/images/our-menu/01.jpg') }}" alt="image" title="image" class="img-fluid" />
+                                                        <img src="{{ secure_asset('app_assets/images/our-menu/01.jpg') }}" alt="image" title="image" class="img-fluid" />
                                                     </div>
                                                     <div class="caption">
                                                         <h4>Food Title Here</h4>
@@ -456,7 +456,7 @@
                                                 <!-- Box Start -->
                                                 <diV class="box">
                                                     <div class="image">
-                                                        <img src="{{ asset('app_assets/images/our-menu/04.jpg') }}" alt="image" title="image" class="img-fluid" />
+                                                        <img src="{{ secure_asset('app_assets/images/our-menu/04.jpg') }}" alt="image" title="image" class="img-fluid" />
                                                     </div>
                                                     <div class="caption">
                                                         <h4>Food Title Here</h4>
@@ -471,7 +471,7 @@
                                                 <!-- Box Start -->
                                                 <diV class="box">
                                                     <div class="image">
-                                                        <img src="{{ asset('app_assets/images/our-menu/07.jpg') }}" alt="image" title="image" class="img-fluid" />
+                                                        <img src="{{ secure_asset('app_assets/images/our-menu/07.jpg') }}" alt="image" title="image" class="img-fluid" />
                                                     </div>
                                                     <div class="caption">
                                                         <h4>Food Title Here</h4>
@@ -486,7 +486,7 @@
                                                 <!-- Box Start -->
                                                 <diV class="box">
                                                     <div class="image">
-                                                        <img src="{{ asset('app_assets/images/our-menu/02.jpg') }}" alt="image" title="image" class="img-fluid" />
+                                                        <img src="{{ secure_asset('app_assets/images/our-menu/02.jpg') }}" alt="image" title="image" class="img-fluid" />
                                                     </div>
                                                     <div class="caption">
                                                         <h4>Food Title Here</h4>
@@ -501,7 +501,7 @@
                                                 <!-- Box Start -->
                                                 <diV class="box">
                                                     <div class="image">
-                                                        <img src="{{ asset('app_assets/images/our-menu/05.jpg') }}" alt="image" title="image" class="img-fluid" />
+                                                        <img src="{{ secure_asset('app_assets/images/our-menu/05.jpg') }}" alt="image" title="image" class="img-fluid" />
                                                     </div>
                                                     <div class="caption">
                                                         <h4>Food Title Here</h4>
@@ -516,7 +516,7 @@
                                                 <!-- Box Start -->
                                                 <diV class="box">
                                                     <div class="image">
-                                                        <img src="{{ asset('app_assets/images/our-menu/08.jpg') }}" alt="image" title="image" class="img-fluid" />
+                                                        <img src="{{ secure_asset('app_assets/images/our-menu/08.jpg') }}" alt="image" title="image" class="img-fluid" />
                                                     </div>
                                                     <div class="caption">
                                                         <h4>Food Title Here</h4>
@@ -531,7 +531,7 @@
                                                 <!-- Box Start -->
                                                 <diV class="box">
                                                     <div class="image">
-                                                        <img src="{{ asset('app_assets/images/our-menu/03.jpg') }}" alt="image" title="image" class="img-fluid" />
+                                                        <img src="{{ secure_asset('app_assets/images/our-menu/03.jpg') }}" alt="image" title="image" class="img-fluid" />
                                                     </div>
                                                     <div class="caption">
                                                         <h4>Food Title Here</h4>
@@ -546,7 +546,7 @@
                                                 <!-- Box Start -->
                                                 <diV class="box">
                                                     <div class="image">
-                                                        <img src="{{ asset('app_assets/images/our-menu/06.jpg') }}" alt="image" title="image" class="img-fluid" />
+                                                        <img src="{{ secure_asset('app_assets/images/our-menu/06.jpg') }}" alt="image" title="image" class="img-fluid" />
                                                     </div>
                                                     <div class="caption">
                                                         <h4>Food Title Here</h4>
@@ -568,7 +568,7 @@
                                                 <!-- Box Start -->
                                                 <div class="box">
                                                     <div class="image">
-                                                        <img src="{{ asset('app_assets/images/our-menu/07.jpg') }}" alt="image" title="image" class="img-fluid" />
+                                                        <img src="{{ secure_asset('app_assets/images/our-menu/07.jpg') }}" alt="image" title="image" class="img-fluid" />
                                                     </div>
                                                     <div class="caption">
                                                         <h4>Food Title Here</h4>
@@ -583,7 +583,7 @@
                                                 <!-- Box Start -->
                                                 <diV class="box">
                                                     <div class="image">
-                                                        <img src="{{ asset('app_assets/images/our-menu/02.jpg') }}" alt="image" title="image" class="img-fluid" />
+                                                        <img src="{{ secure_asset('app_assets/images/our-menu/02.jpg') }}" alt="image" title="image" class="img-fluid" />
                                                     </div>
                                                     <div class="caption">
                                                         <h4>Food Title Here</h4>
@@ -598,7 +598,7 @@
                                                 <!-- Box Start -->
                                                 <diV class="box">
                                                     <div class="image">
-                                                        <img src="{{ asset('app_assets/images/our-menu/01.jpg') }}" alt="image" title="image" class="img-fluid" />
+                                                        <img src="{{ secure_asset('app_assets/images/our-menu/01.jpg') }}" alt="image" title="image" class="img-fluid" />
                                                     </div>
                                                     <div class="caption">
                                                         <h4>Food Title Here</h4>
@@ -613,7 +613,7 @@
                                                 <!-- Box Start -->
                                                 <diV class="box">
                                                     <div class="image">
-                                                        <img src="{{ asset('app_assets/images/our-menu/04.jpg') }}" alt="image" title="image" class="img-fluid" />
+                                                        <img src="{{ secure_asset('app_assets/images/our-menu/04.jpg') }}" alt="image" title="image" class="img-fluid" />
                                                     </div>
                                                     <div class="caption">
                                                         <h4>Food Title Here</h4>
@@ -628,7 +628,7 @@
                                                 <!-- Box Start -->
                                                 <diV class="box">
                                                     <div class="image">
-                                                        <img src="{{ asset('app_assets/images/our-menu/05.jpg') }}" alt="image" title="image" class="img-fluid" />
+                                                        <img src="{{ secure_asset('app_assets/images/our-menu/05.jpg') }}" alt="image" title="image" class="img-fluid" />
                                                     </div>
                                                     <div class="caption">
                                                         <h4>Food Title Here</h4>
@@ -643,7 +643,7 @@
                                                 <!-- Box Start -->
                                                 <diV class="box">
                                                     <div class="image">
-                                                        <img src="{{ asset('app_assets/images/our-menu/06.jpg') }}" alt="image" title="image" class="img-fluid" />
+                                                        <img src="{{ secure_asset('app_assets/images/our-menu/06.jpg') }}" alt="image" title="image" class="img-fluid" />
                                                     </div>
                                                     <div class="caption">
                                                         <h4>Food Title Here</h4>
@@ -658,7 +658,7 @@
                                                 <!-- Box Start -->
                                                 <diV class="box">
                                                     <div class="image">
-                                                        <img src="{{ asset('app_assets/images/our-menu/09.jpg') }}" alt="image" title="image" class="img-fluid" />
+                                                        <img src="{{ secure_asset('app_assets/images/our-menu/09.jpg') }}" alt="image" title="image" class="img-fluid" />
                                                     </div>
                                                     <div class="caption">
                                                         <h4>Food Title Here</h4>
@@ -673,7 +673,7 @@
                                                 <!-- Box Start -->
                                                 <diV class="box">
                                                     <div class="image">
-                                                        <img src="{{ asset('app_assets/images/our-menu/08.jpg') }}" alt="image" title="image" class="img-fluid" />
+                                                        <img src="{{ secure_asset('app_assets/images/our-menu/08.jpg') }}" alt="image" title="image" class="img-fluid" />
                                                     </div>
                                                     <div class="caption">
                                                         <h4>Food Title Here</h4>
@@ -695,7 +695,7 @@
                                                 <!-- Box Start -->
                                                 <diV class="box">
                                                     <div class="image">
-                                                        <img src="{{ asset('app_assets/images/our-menu/01.jpg') }}" alt="image" title="image" class="img-fluid" />
+                                                        <img src="{{ secure_asset('app_assets/images/our-menu/01.jpg') }}" alt="image" title="image" class="img-fluid" />
                                                     </div>
                                                     <div class="caption">
                                                         <h4>Food Title Here</h4>
@@ -710,7 +710,7 @@
                                                 <!-- Box Start -->
                                                 <diV class="box">
                                                     <div class="image">
-                                                        <img src="{{ asset('app_assets/images/our-menu/04.jpg') }}" alt="image" title="image" class="img-fluid" />
+                                                        <img src="{{ secure_asset('app_assets/images/our-menu/04.jpg') }}" alt="image" title="image" class="img-fluid" />
                                                     </div>
                                                     <div class="caption">
                                                         <h4>Food Title Here</h4>
@@ -725,7 +725,7 @@
                                                 <!-- Box Start -->
                                                 <diV class="box">
                                                     <div class="image">
-                                                        <img src="{{ asset('app_assets/images/our-menu/07.jpg') }}" alt="image" title="image" class="img-fluid" />
+                                                        <img src="{{ secure_asset('app_assets/images/our-menu/07.jpg') }}" alt="image" title="image" class="img-fluid" />
                                                     </div>
                                                     <div class="caption">
                                                         <h4>Food Title Here</h4>
@@ -740,7 +740,7 @@
                                                 <!-- Box Start -->
                                                 <diV class="box">
                                                     <div class="image">
-                                                        <img src="{{ asset('app_assets/images/our-menu/02.jpg') }}" alt="image" title="image" class="img-fluid" />
+                                                        <img src="{{ secure_asset('app_assets/images/our-menu/02.jpg') }}" alt="image" title="image" class="img-fluid" />
                                                     </div>
                                                     <div class="caption">
                                                         <h4>Food Title Here</h4>
@@ -755,7 +755,7 @@
                                                 <!-- Box Start -->
                                                 <diV class="box">
                                                     <div class="image">
-                                                        <img src="{{ asset('app_assets/images/our-menu/05.jpg') }}" alt="image" title="image" class="img-fluid" />
+                                                        <img src="{{ secure_asset('app_assets/images/our-menu/05.jpg') }}" alt="image" title="image" class="img-fluid" />
                                                     </div>
                                                     <div class="caption">
                                                         <h4>Food Title Here</h4>
@@ -770,7 +770,7 @@
                                                 <!-- Box Start -->
                                                 <diV class="box">
                                                     <div class="image">
-                                                        <img src="{{ asset('app_assets/images/our-menu/08.jpg') }}" alt="image" title="image" class="img-fluid" />
+                                                        <img src="{{ secure_asset('app_assets/images/our-menu/08.jpg') }}" alt="image" title="image" class="img-fluid" />
                                                     </div>
                                                     <div class="caption">
                                                         <h4>Food Title Here</h4>
@@ -785,7 +785,7 @@
                                                 <!-- Box Start -->
                                                 <diV class="box">
                                                     <div class="image">
-                                                        <img src="{{ asset('app_assets/images/our-menu/03.jpg') }}" alt="image" title="image" class="img-fluid" />
+                                                        <img src="{{ secure_asset('app_assets/images/our-menu/03.jpg') }}" alt="image" title="image" class="img-fluid" />
                                                     </div>
                                                     <div class="caption">
                                                         <h4>Food Title Here</h4>
@@ -800,7 +800,7 @@
                                                 <!-- Box Start -->
                                                 <diV class="box">
                                                     <div class="image">
-                                                        <img src="{{ asset('app_assets/images/our-menu/06.jpg') }}" alt="image" title="image" class="img-fluid" />
+                                                        <img src="{{ secure_asset('app_assets/images/our-menu/06.jpg') }}" alt="image" title="image" class="img-fluid" />
                                                     </div>
                                                     <div class="caption">
                                                         <h4>Food Title Here</h4>
@@ -822,7 +822,7 @@
                                                 <!-- Box Start -->
                                                 <diV class="box">
                                                     <div class="image">
-                                                        <img src="{{ asset('app_assets/images/our-menu/07.jpg') }}" alt="image" title="image" class="img-fluid" />
+                                                        <img src="{{ secure_asset('app_assets/images/our-menu/07.jpg') }}" alt="image" title="image" class="img-fluid" />
                                                     </div>
                                                     <div class="caption">
                                                         <h4>Food Title Here</h4>
@@ -837,7 +837,7 @@
                                                 <!-- Box Start -->
                                                 <diV class="box">
                                                     <div class="image">
-                                                        <img src="{{ asset('app_assets/images/our-menu/02.jpg') }}" alt="image" title="image" class="img-fluid" />
+                                                        <img src="{{ secure_asset('app_assets/images/our-menu/02.jpg') }}" alt="image" title="image" class="img-fluid" />
                                                     </div>
                                                     <div class="caption">
                                                         <h4>Food Title Here</h4>
@@ -852,7 +852,7 @@
                                                 <!-- Box Start -->
                                                 <diV class="box">
                                                     <div class="image">
-                                                        <img src="{{ asset('app_assets/images/our-menu/01.jpg') }}" alt="image" title="image" class="img-fluid" />
+                                                        <img src="{{ secure_asset('app_assets/images/our-menu/01.jpg') }}" alt="image" title="image" class="img-fluid" />
                                                     </div>
                                                     <div class="caption">
                                                         <h4>Food Title Here</h4>
@@ -867,7 +867,7 @@
                                                 <!-- Box Start -->
                                                 <diV class="box">
                                                     <div class="image">
-                                                        <img src="{{ asset('app_assets/images/our-menu/04.jpg') }}" alt="image" title="image" class="img-fluid" />
+                                                        <img src="{{ secure_asset('app_assets/images/our-menu/04.jpg') }}" alt="image" title="image" class="img-fluid" />
                                                     </div>
                                                     <div class="caption">
                                                         <h4>Food Title Here</h4>
@@ -882,7 +882,7 @@
                                                 <!-- Box Start -->
                                                 <diV class="box">
                                                     <div class="image">
-                                                        <img src="{{ asset('app_assets/images/our-menu/05.jpg') }}" alt="image" title="image" class="img-fluid" />
+                                                        <img src="{{ secure_asset('app_assets/images/our-menu/05.jpg') }}" alt="image" title="image" class="img-fluid" />
                                                     </div>
                                                     <div class="caption">
                                                         <h4>Food Title Here</h4>
@@ -897,7 +897,7 @@
                                                 <!-- Box Start -->
                                                 <diV class="box">
                                                     <div class="image">
-                                                        <img src="{{ asset('app_assets/images/our-menu/08.jpg') }}" alt="image" title="image" class="img-fluid" />
+                                                        <img src="{{ secure_asset('app_assets/images/our-menu/08.jpg') }}" alt="image" title="image" class="img-fluid" />
                                                     </div>
                                                     <div class="caption">
                                                         <h4>Food Title Here</h4>
@@ -912,7 +912,7 @@
                                                 <!-- Box Start -->
                                                 <diV class="box">
                                                     <div class="image">
-                                                        <img src="{{ asset('app_assets/images/our-menu/03.jpg') }}" alt="image" title="image" class="img-fluid" />
+                                                        <img src="{{ secure_asset('app_assets/images/our-menu/03.jpg') }}" alt="image" title="image" class="img-fluid" />
                                                     </div>
                                                     <div class="caption">
                                                         <h4>Food Title Here</h4>
@@ -927,7 +927,7 @@
                                                 <!-- Box Start -->
                                                 <diV class="box">
                                                     <div class="image">
-                                                        <img src="{{ asset('app_assets/images/our-menu/09.jpg') }}" alt="image" title="image" class="img-fluid" />
+                                                        <img src="{{ secure_asset('app_assets/images/our-menu/09.jpg') }}" alt="image" title="image" class="img-fluid" />
                                                     </div>
                                                     <div class="caption">
                                                         <h4>Food Title Here</h4>
@@ -949,7 +949,7 @@
                                                 <!-- Box Start -->
                                                 <diV class="box">
                                                     <div class="image">
-                                                        <img src="{{ asset('app_assets/images/our-menu/01.jpg') }}" alt="image" title="image" class="img-fluid" />
+                                                        <img src="{{ secure_asset('app_assets/images/our-menu/01.jpg') }}" alt="image" title="image" class="img-fluid" />
                                                     </div>
                                                     <div class="caption">
                                                         <h4>Food Title Here</h4>
@@ -964,7 +964,7 @@
                                                 <!-- Box Start -->
                                                 <diV class="box">
                                                     <div class="image">
-                                                        <img src="{{ asset('app_assets/images/our-menu/04.jpg') }}" alt="image" title="image" class="img-fluid" />
+                                                        <img src="{{ secure_asset('app_assets/images/our-menu/04.jpg') }}" alt="image" title="image" class="img-fluid" />
                                                     </div>
                                                     <div class="caption">
                                                         <h4>Food Title Here</h4>
@@ -979,7 +979,7 @@
                                                 <!-- Box Start -->
                                                 <diV class="box">
                                                     <div class="image">
-                                                        <img src="{{ asset('app_assets/images/our-menu/07.jpg') }}" alt="image" title="image" class="img-fluid" />
+                                                        <img src="{{ secure_asset('app_assets/images/our-menu/07.jpg') }}" alt="image" title="image" class="img-fluid" />
                                                     </div>
                                                     <div class="caption">
                                                         <h4>Food Title Here</h4>
@@ -994,7 +994,7 @@
                                                 <!-- Box Start -->
                                                 <diV class="box">
                                                     <div class="image">
-                                                        <img src="{{ asset('app_assets/images/our-menu/02.jpg') }}" alt="image" title="image" class="img-fluid" />
+                                                        <img src="{{ secure_asset('app_assets/images/our-menu/02.jpg') }}" alt="image" title="image" class="img-fluid" />
                                                     </div>
                                                     <div class="caption">
                                                         <h4>Food Title Here</h4>
@@ -1009,7 +1009,7 @@
                                                 <!-- Box Start -->
                                                 <diV class="box">
                                                     <div class="image">
-                                                        <img src="{{ asset('app_assets/images/our-menu/05.jpg') }}" alt="image" title="image" class="img-fluid" />
+                                                        <img src="{{ secure_asset('app_assets/images/our-menu/05.jpg') }}" alt="image" title="image" class="img-fluid" />
                                                     </div>
                                                     <div class="caption">
                                                         <h4>Food Title Here</h4>
@@ -1024,7 +1024,7 @@
                                                 <!-- Box Start -->
                                                 <diV class="box">
                                                     <div class="image">
-                                                        <img src="{{ asset('app_assets/images/our-menu/08.jpg') }}" alt="image" title="image" class="img-fluid" />
+                                                        <img src="{{ secure_asset('app_assets/images/our-menu/08.jpg') }}" alt="image" title="image" class="img-fluid" />
                                                     </div>
                                                     <div class="caption">
                                                         <h4>Food Title Here</h4>
@@ -1039,7 +1039,7 @@
                                                 <!-- Box Start -->
                                                 <diV class="box">
                                                     <div class="image">
-                                                        <img src="{{ asset('app_assets/images/our-menu/03.jpg') }}" alt="image" title="image" class="img-fluid" />
+                                                        <img src="{{ secure_asset('app_assets/images/our-menu/03.jpg') }}" alt="image" title="image" class="img-fluid" />
                                                     </div>
                                                     <div class="caption">
                                                         <h4>Food Title Here</h4>
@@ -1054,7 +1054,7 @@
                                                 <!-- Box Start -->
                                                 <diV class="box">
                                                     <div class="image">
-                                                        <img src="{{ asset('app_assets/images/our-menu/06.jpg') }}" alt="image" title="image" class="img-fluid" />
+                                                        <img src="{{ secure_asset('app_assets/images/our-menu/06.jpg') }}" alt="image" title="image" class="img-fluid" />
                                                     </div>
                                                     <div class="caption">
                                                         <h4>Food Title Here</h4>
@@ -1076,7 +1076,7 @@
                                                 <!-- Box Start -->
                                                 <diV class="box">
                                                     <div class="image">
-                                                        <img src="{{ asset('app_assets/images/our-menu/07.jpg') }}" alt="image" title="image" class="img-fluid" />
+                                                        <img src="{{ secure_asset('app_assets/images/our-menu/07.jpg') }}" alt="image" title="image" class="img-fluid" />
                                                     </div>
                                                     <div class="caption">
                                                         <h4>Food Title Here</h4>
@@ -1091,7 +1091,7 @@
                                                 <!-- Box Start -->
                                                 <diV class="box">
                                                     <div class="image">
-                                                        <img src="{{ asset('app_assets/images/our-menu/02.jpg') }}" alt="image" title="image" class="img-fluid" />
+                                                        <img src="{{ secure_asset('app_assets/images/our-menu/02.jpg') }}" alt="image" title="image" class="img-fluid" />
                                                     </div>
                                                     <div class="caption">
                                                         <h4>Food Title Here</h4>
@@ -1106,7 +1106,7 @@
                                                 <!-- Box Start -->
                                                 <diV class="box">
                                                     <div class="image">
-                                                        <img src="{{ asset('app_assets/images/our-menu/01.jpg') }}" alt="image" title="image" class="img-fluid" />
+                                                        <img src="{{ secure_asset('app_assets/images/our-menu/01.jpg') }}" alt="image" title="image" class="img-fluid" />
                                                     </div>
                                                     <div class="caption">
                                                         <h4>Food Title Here</h4>
@@ -1121,7 +1121,7 @@
                                                 <!-- Box Start -->
                                                 <diV class="box">
                                                     <div class="image">
-                                                        <img src="{{ asset('app_assets/images/our-menu/04.jpg') }}" alt="image" title="image" class="img-fluid" />
+                                                        <img src="{{ secure_asset('app_assets/images/our-menu/04.jpg') }}" alt="image" title="image" class="img-fluid" />
                                                     </div>
                                                     <div class="caption">
                                                         <h4>Food Title Here</h4>
@@ -1136,7 +1136,7 @@
                                                 <!-- Box Start -->
                                                 <diV class="box">
                                                     <div class="image">
-                                                        <img src="{{ asset('app_assets/images/our-menu/05.jpg') }}" alt="image" title="image" class="img-fluid" />
+                                                        <img src="{{ secure_asset('app_assets/images/our-menu/05.jpg') }}" alt="image" title="image" class="img-fluid" />
                                                     </div>
                                                     <div class="caption">
                                                         <h4>Food Title Here</h4>
@@ -1151,7 +1151,7 @@
                                                 <!-- Box Start -->
                                                 <diV class="box">
                                                     <div class="image">
-                                                        <img src="{{ asset('app_assets/images/our-menu/08.jpg') }}" alt="image" title="image" class="img-fluid" />
+                                                        <img src="{{ secure_asset('app_assets/images/our-menu/08.jpg') }}" alt="image" title="image" class="img-fluid" />
                                                     </div>
                                                     <div class="caption">
                                                         <h4>Food Title Here</h4>
@@ -1166,7 +1166,7 @@
                                                 <!-- Box Start -->
                                                 <diV class="box">
                                                     <div class="image">
-                                                        <img src="{{ asset('app_assets/images/our-menu/09.jpg') }}" alt="image" title="image" class="img-fluid" />
+                                                        <img src="{{ secure_asset('app_assets/images/our-menu/09.jpg') }}" alt="image" title="image" class="img-fluid" />
                                                     </div>
                                                     <div class="caption">
                                                         <h4>Food Title Here</h4>
@@ -1181,7 +1181,7 @@
                                                 <!-- Box Start -->
                                                 <diV class="box">
                                                     <div class="image">
-                                                        <img src="{{ asset('app_assets/images/our-menu/03.jpg') }}" alt="image" title="image" class="img-fluid" />
+                                                        <img src="{{ secure_asset('app_assets/images/our-menu/03.jpg') }}" alt="image" title="image" class="img-fluid" />
                                                     </div>
                                                     <div class="caption">
                                                         <h4>Food Title Here</h4>
@@ -1340,7 +1340,7 @@
                         <div class="row powered">
                             <!--  Copyright Start -->
                             <div class="col-md-3 col-sm-6 order-md-1">
-                                <img src="{{ asset('app_assets/images/logo/logo-white.png') }}" class="img-fluid" title="logo" alt="logo">
+                                <img src="{{ secure_asset('app_assets/images/logo/logo-white.png') }}" class="img-fluid" title="logo" alt="logo">
                             </div>
                             <div class="col-md-3 col-sm-6 text-right order-md-3">
                                 <!--  Footer Social Start -->
@@ -1369,7 +1369,7 @@
                 <a class="opener" href="#"><i class="icofont icofont-options"></i></a>
                 <div class="buy-button">
                     <a href="index.html" class="customizer-logo">
-                        <img src="{{ asset('app_assets/images/logo/logo-gray.png') }}" alt="Theme Logo">
+                        <img src="{{ secure_asset('app_assets/images/logo/logo-gray.png') }}" alt="Theme Logo">
                     </a>
                     <div class="buy-now">
                         <a class="btn btn-theme btn-md" target="new" href="https://themeforest.net/item/steam-restaurant-food-drinks-html-5-website-template/21212196">Buy now!</a> 
@@ -1428,27 +1428,27 @@
         </div>
 
         <!-- jquery -->
-        <script src="{{ asset('app_assets/libs/jquery/jquery.min.js') }}"></script>
+        <script src="{{ secure_asset('app_assets/libs/jquery/jquery.min.js') }}"></script>
         <!-- jquery Validate -->
-        <script src="{{ asset('app_assets/libs/jquery-validation/jquery.validate.min.js') }}"></script>
+        <script src="{{ secure_asset('app_assets/libs/jquery-validation/jquery.validate.min.js') }}"></script>
         <!-- popper js -->
-        <script src="{{ asset('app_assets/libs/popper/popper.min.js') }}"></script>
+        <script src="{{ secure_asset('app_assets/libs/popper/popper.min.js') }}"></script>
         <!-- bootstrap js -->
-        <script src="{{ asset('app_assets/libs/bootstrap-4.0.0-dist/js/bootstrap.min.js') }}"></script>
+        <script src="{{ secure_asset('app_assets/libs/bootstrap-4.0.0-dist/js/bootstrap.min.js') }}"></script>
         <!-- owlcarousel js -->
-        <script src="{{ asset('app_assets/libs/owlcarousel2/owl.carousel.min.js') }}"></script>
+        <script src="{{ secure_asset('app_assets/libs/owlcarousel2/owl.carousel.min.js') }}"></script>
         <!--inview js code-->
-        <script src="{{ asset('app_assets/libs/jquery.inview/jquery.inview.min.js') }}"></script>
+        <script src="{{ secure_asset('app_assets/libs/jquery.inview/jquery.inview.min.js') }}"></script>
         <!--CountTo js code-->
-        <script src="{{ asset('app_assets/libs/jquery.countTo/jquery.countTo.js') }}"></script>
+        <script src="{{ secure_asset('app_assets/libs/jquery.countTo/jquery.countTo.js') }}"></script>
         <!-- Animated Headlines js code-->
-        <script src="{{ asset('app_assets/libs/animated-headlines/animated-headlines.js') }}"></script>
+        <script src="{{ secure_asset('app_assets/libs/animated-headlines/animated-headlines.js') }}"></script>
         <!-- mb.YTPlayer js code-->
-        <script src="{{ asset('app_assets/libs/mb.YTPlayer/jquery.mb.YTPlayer.min.js') }}"></script>
+        <script src="{{ secure_asset('app_assets/libs/mb.YTPlayer/jquery.mb.YTPlayer.min.js') }}"></script>
         <!-- Switch Style js -->
-        <script src="{{ asset('app_assets/switch-style/switch-style.js') }}"></script>
+        <script src="{{ secure_asset('app_assets/switch-style/switch-style.js') }}"></script>
         <!--internal js-->
-        <script src="{{ asset('app_assets/js/internal.js') }}"></script>
+        <script src="{{ secure_asset('app_assets/js/internal.js') }}"></script>
     </body>
 
 </html>

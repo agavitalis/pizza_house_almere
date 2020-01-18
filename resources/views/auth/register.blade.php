@@ -56,12 +56,42 @@
                   <div class="col-md-7 d-flex flex-center">
                     <div class="p-4 p-md-5 flex-grow-1">
                       <h3>Register</h3>
-                      <form>
-                        <div class="form-group"><label for="card-name">Name</label><input class="form-control" type="text" id="card-name" /></div>
-                        <div class="form-group"><label for="card-email">Email address</label><input class="form-control" type="email" id="card-email" /></div>
+                      <form method="POST" action="{{ route('register') }}">
+                        <div class="form-group">
+                          <label for="card-name">Name</label>
+                          <input id="card-name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus >
+
+                          @error('name')
+                              <span class="invalid-feedback" role="alert">
+                                  <strong>{{ $message }}</strong>
+                              </span>
+                          @enderror
+                        </div>
+                        <div class="form-group">
+                          <label for="card-email">Email address</label>
+                          <input id="card-email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" >
+
+                          @error('email')
+                              <span class="invalid-feedback" role="alert">
+                                  <strong>{{ $message }}</strong>
+                              </span>
+                          @enderror
+                        </div>
                         <div class="form-row">
-                          <div class="form-group col-6"><label for="card-password">Password</label><input class="form-control" type="password" id="card-password" /></div>
-                          <div class="form-group col-6"><label for="card-confirm-password">Confirm Password</label><input class="form-control" type="password" id="card-confirm-password" /></div>
+                          <div class="form-group col-6">
+                            <label for="card-password">Password</label>
+                            <input id="card-password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
+
+                                @error('password')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                          </div>
+                          <div class="form-group col-6">
+                            <label for="card-confirm-password">Confirm Password</label>
+                            <input id="card-confirm-password" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
+                          </div>
                         </div>
                         <div class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id="card-register-checkbox" /><label class="custom-control-label" for="card-register-checkbox">I accept the <a href="#!">terms </a>and <a href="#!">privacy policy</a></label></div>
                         <div class="form-group"><button class="btn btn-primary btn-block mt-3" type="submit" name="submit">Register</button></div>

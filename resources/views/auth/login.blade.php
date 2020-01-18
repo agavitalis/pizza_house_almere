@@ -52,13 +52,39 @@
                   <div class="col-md-7 d-flex flex-center">
                     <div class="p-4 p-md-5 flex-grow-1">
                       <h3>Account Login</h3>
-                      <form>
-                        <div class="form-group"><label for="card-email">Email address</label><input class="form-control" id="card-email" type="email" /></div>
-                        <div class="form-group">
-                          <div class="d-flex justify-content-between"><label for="card-password">Password</label><a class="fs--1" href="forgot-password.html">Forgot Password?</a></div><input class="form-control" id="card-password" type="password" />
-                        </div>
-                        <div class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id="card-checkbox" checked="checked" /><label class="custom-control-label" for="card-checkbox">Remember me</label></div>
-                        <div class="form-group"><button class="btn btn-primary btn-block mt-3" type="submit" name="submit">Log in</button></div>
+                      <form method="POST" action="{{ route('login') }}">
+                          @csrf
+                          <div class="form-group"><label for="card-email">Email address</label>
+                              <input class="form-control @error('email') is-invalid @enderror" id="card-email" type="email" name="email" />
+                              @error('email')
+                                  <span class="invalid-feedback" role="alert">
+                                      <strong>{{ $message }}</strong>
+                                  </span>
+                              @enderror
+                          </div>
+                          <div class="form-group">
+                              <div class="d-flex justify-content-between">
+                                <label for="card-password">Password</label>
+                                @if (Route::has('password.request'))
+                                    <a class="fs--1" href="{{ route('password.request') }}">
+                                        {{ __('Forgot Password?') }}
+                                    </a>
+                                @endif                                 
+                              </div>
+                              <input class="form-control @error('password') is-invalid @enderror" id="card-password" type="password" name='password' />
+                              @error('password')
+                                  <span class="invalid-feedback" role="alert">
+                                      <strong>{{ $message }}</strong>
+                                  </span>
+                              @enderror
+                          </div>
+                          <div class="custom-control custom-checkbox">
+                              <input class="custom-control-input" type="checkbox" id="card-checkbox" checked="checked" />
+                                  <label class="custom-control-label" for="card-checkbox">Remember me</label>
+                          </div>
+                          <div class="form-group">
+                              <button class="btn btn-primary btn-block mt-3" type="submit" name="submit">Log in</button>
+                          </div>
                       </form>
                       <div class="w-100 position-relative mt-4">
                         <hr class="text-300" />
@@ -81,8 +107,6 @@
     </main><!-- ===============================================-->
     <!--    End of Main Content-->
     <!-- ===============================================-->
-
-
 
     <!-- ===============================================-->
     <!--    JavaScripts-->

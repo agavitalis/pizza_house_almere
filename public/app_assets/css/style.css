@@ -3951,6 +3951,7 @@ footer .powered .social li a:hover i{
     }
     .paddleft {
         padding-left: 15px;
+        padding-top: 10px;
     }
     #menu .navbar {
         margin: 0px 0;
@@ -4007,7 +4008,7 @@ footer .powered .social li a:hover i{
         top:0%;
     }
     .button-top .btn-primary {
-        font-size: 16px;
+        font-size: 10px;
     }
     .dish .box .caption h4{
         font-size: 16px;

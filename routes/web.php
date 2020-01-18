@@ -11,6 +11,27 @@
 |
 */
 
-Route::get('/', 'HomeController@index')->name('index');
+
+//Application routes 
+Route::group(['namespace'=>"Appp"],function(){
+    
+    Route::get('/', 'HomeController@index')->name('index');
+    Route::match(['GET','POST'],'/advert','IndexController@advert')->name('advert');
+    
+});
+
+//User routes 
+Route::group(['namespace'=>"Appp"],function(){
+     
+    Route::match(['GET','POST'],'/advert','IndexController@advert')->name('advert');
+    
+});
+
+//Admin routes 
+Route::group(['namespace'=>"Appp"],function(){
+     
+    Route::match(['GET','POST'],'/advert','IndexController@advert')->name('advert');
+    
+});
 
 Auth::routes();

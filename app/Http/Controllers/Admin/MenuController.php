@@ -31,13 +31,15 @@ class MenuController extends Controller
         return back()->with("success","Menu Created" );
     }
 
-    public function manage_menu(){
-        $menus = Menu::all();
-        return view('admin.manage_menu', compact('menus'));
+    public function manage_menu(Request $request){
+
+        if($request->isMethod('GET')){
+            $menus = Menu::all();
+            return view('admin.manage_menu', compact('menus'));
+        }
     }
 
     public function test(){
-        
         return view('admin.test');
     }
 }

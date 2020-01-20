@@ -32,34 +32,15 @@
             <hr class="border-300 my-2" />
         </div>
         <ul class="navbar-nav flex-column">
-            <li class="nav-item"><a class="nav-link dropdown-indicator" href="#egallery" data-toggle="collapse"
-                    role="button" aria-expanded="false" aria-controls="egallery">
-                    <div class="d-flex align-items-center"><span class="nav-link-icon"><span
-                                class="fas fa-qrcode"></span></span><span>Gallery</span></div>
-                </a>
-                <ul class="nav collapse" id="egallery" data-parent="#navbarVerticalCollapse">
-                    <li class="nav-item"><a class="nav-link dropdown-indicator" href="#egallery-themes"
-                            data-toggle="collapse" role="button" aria-expanded="false"
-                            aria-controls="egallery-themes">Themes</a>
-                        <ul class="nav collapse" id="egallery-themes">
-                            <li class="nav-item"><a class="nav-link" href="/create_theme">Create Themes</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Manage Themes</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="/create_gallery">Create Gallery</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Manage Gallery</a></li>
-                    
-                </ul>
-            </li>
            
             <li class="nav-item"><a class="nav-link dropdown-indicator" href="#utilities" data-toggle="collapse"
                     role="button" aria-expanded="false" aria-controls="utilities">
                     <div class="d-flex align-items-center"><span class="nav-link-icon"><span
-                                class="fab fa-hotjar"></span></span><span>Archives</span></div>
+                                class="fab fa-hotjar"></span></span><span>Pizza</span></div>
                 </a>
                 <ul class="nav collapse" id="utilities" data-parent="#navbarVerticalCollapse">
-                    <li class="nav-item"><a class="nav-link" href="/create_archive">Add Archives</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/manage_archive">Manage Archives</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/admin_create_pizza">Add Pizza</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/admin_manage_pizza">Manage Pizza</a></li>
                     
                 </ul>
             </li>
@@ -69,13 +50,34 @@
             <hr class="border-300 my-2" />
         </div>
         <ul class="navbar-nav flex-column">
+           
+           <li class="nav-item"><a class="nav-link dropdown-indicator" href="#orders" data-toggle="collapse"
+                   role="button" aria-expanded="false" aria-controls="orders">
+                   <div class="d-flex align-items-center"><span class="nav-link-icon"><span
+                               class="fas fa-cart-plus"></span></span><span>Orders</span></div>
+               </a>
+               <ul class="nav collapse" id="orders" data-parent="#navbarVerticalCollapse">
+                   <li class="nav-item"><a class="nav-link" href="/admin_orders_latest">Latest Orders</a></li>
+                   <li class="nav-item"><a class="nav-link" href="/admin_orders_processing">Processing Orders</a></li>
+                   <li class="nav-item"><a class="nav-link" href="/admin_orders_delivered">Completed Orders</a></li>
+                   <hr class="border-300 my-2" />
+                   <li class="nav-item"><a class="nav-link" href="/admin_orders">All Orders</a></li>
+                   
+               </ul>
+           </li>
+          
+       </ul>
+       <div class="px-3 px-xl-0">
+            <hr class="border-300 my-2" />
+        </div>
+        <ul class="navbar-nav flex-column">
 
             <li class="nav-item"><a class="nav-link" href="/documentations">
                     <div class="d-flex align-items-center"><span class="nav-link-icon"><span
-                                class="fas fa-code-branch"></span></span><span>API Docs</span><span
-                            class="badge badge-pill ml-2 badge-soft-primary">v1.0.0</span></div>
+                                class="fas fa-users"></span></span><span>Users</span><span
+                            class="badge badge-pill ml-2 badge-soft-primary">new</span></div>
                 </a>
             </li>
-        </ul><a class="btn btn-primary btn-sm btn-block my-3" href="#">Log out</a>
+        </ul><a class="btn btn-primary btn-sm btn-block my-3" href="/logout">Log out</a>
     </div>
 </nav>

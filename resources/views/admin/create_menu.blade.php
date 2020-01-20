@@ -17,7 +17,7 @@
     <div class="card-body">
         <div class="row">
             <div class="col-lg-8">
-                <h3 class="mb-0">Add Menu</h3>
+                <h3 class="mb-0">Add a Menu</h3>
                 <p class="mt-2">Add Your Menu items here</p><a class="btn btn-link pl-0 btn-sm"
                     href="/" target="_blank"> Back to home<span
                         class="fas fa-chevron-right ml-1 fs--2"></span></a>

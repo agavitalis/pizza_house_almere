@@ -56,10 +56,7 @@
                                     target="_blank"><i class="icofont icofont-social-facebook"></i></a></li>
                             <li class="list-inline-item"><a href="https://twitter.com/spheretheme/" target="_blank"><i
                                         class="icofont icofont-social-twitter"></i></a></li>
-                            <li class="list-inline-item"><a href="https://plus.google.com/" target="_blank"><i
-                                        class="icofont icofont-social-google-plus"></i></a></li>
-                            <li class="list-inline-item"><a href="https://in.pinterest.com/" target="_blank"><i
-                                        class="icofont icofont-social-pinterest"></i></a></li>
+                            
                             <li class="list-inline-item"><a href="https://www.instagram.com/" target="_blank"><i
                                         class="icofont icofont-social-instagram"></i></a></li>
                             <li class="list-inline-item"><a href="https://www.youtube.com/" target="_blank"><i
@@ -68,7 +65,7 @@
                         <!--  Footer Social End -->
                     </div>
                     <div class="col-md-6 col-sm-12 text-center order-md-2">
-                        <p>Copyright © <span>Steam Restaurant & Drinks</span> 2018. All Rights Reserved.</p>
+                        <p>Copyright © <span>PizzaHouse</span> <?php echo date('y'); ?>. All Rights Reserved.</p>
                     </div>
                     <!--  Copyright End -->
                 </div>

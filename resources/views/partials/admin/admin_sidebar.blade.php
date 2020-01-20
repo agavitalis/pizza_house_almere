@@ -1,8 +1,8 @@
 <nav class="navbar navbar-vertical navbar-expand-xl navbar-light navbar-glass"><a class="navbar-brand text-left"
         href="index-2.html">
         <div class="d-flex align-items-center py-3"><img class="mr-2"
-                src="{{ asset('assets/img/illustrations/falcon.png') }}" alt="" width="40" /><span
-                class="text-sans-serif">Biafra</span>
+                src="{{ asset('admin_assets/img/illustrations/falcon.png') }}" alt="" width="40" /><span
+                class="text-sans-serif">PizzaHouse</span>
         </div>
     </a>
     <div class="collapse navbar-collapse" id="navbarVerticalCollapse">
@@ -10,7 +10,7 @@
             <li class="nav-item"><a class="nav-link" href="#home" data-toggle="collapse" role="button"
                     aria-expanded="true" aria-controls="home">
                     <div class="d-flex align-items-center"><span class="nav-link-icon"><span
-                                class="fas fa-chart-pie"></span></span><span>Home</span>
+                                class="fas fa-chart-pie"></span></span><span>Dashboard</span>
                     </div>
                 </a>
 
@@ -19,22 +19,11 @@
             <li class="nav-item"><a class="nav-link dropdown-indicator" href="#stories" data-toggle="collapse"
                     role="button" aria-expanded="false" aria-controls="stories">
                     <div class="d-flex align-items-center"><span class="nav-link-icon"><span
-                                class="fas fa-copy"></span></span><span>Stories</span></div>
+                                class="fas fa-copy"></span></span><span>Menu</span></div>
                 </a>
                 <ul class="nav collapse" id="stories" data-parent="#navbarVerticalCollapse">
-                    
-                    <li class="nav-item"><a class="nav-link dropdown-indicator" href="#add_stories"
-                            data-toggle="collapse" role="button" aria-expanded="false"
-                            aria-controls="add_stories">Add Stories</a>
-                        <ul class="nav collapse" id="add_stories">
-                            <li class="nav-item"><a class="nav-link" href="/add_stories_text">Text</a></li>
-                            <li class="nav-item"><a class="nav-link" href="/add_stories_audio">Audio</a></li>
-                            <li class="nav-item"><a class="nav-link" href="/add_stories_video">Video</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="pages/associations.html">Manage Stories</a></li>
-
-                    
+                    <li class="nav-item"><a class="nav-link" href="/admin_create_menu">Create Menu</a></li> 
+                    <li class="nav-item"><a class="nav-link" href="/admin_manage_menu">Manage Menu</a></li>  
                 </ul>
             </li>
 

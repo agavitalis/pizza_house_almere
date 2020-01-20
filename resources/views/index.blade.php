@@ -1,150 +1,17 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="wrapper">
+
     <!--[if lt IE 8]>
                <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-           <![endif]-->
+    <![endif]-->
 
     <!-- Loader Start -->
-    <div class="loader">
-        <div class="loader-inner">
-            <h4>Cooking in progress..</h4>
-            <div id="cooking">
-                <div class="bubble"></div>
-                <div class="bubble"></div>
-                <div class="bubble"></div>
-                <div class="bubble"></div>
-                <div class="bubble"></div>
-                <div id="area">
-                    <div id="sides">
-                        <div id="pan"></div>
-                        <div id="handle"></div>
-                    </div>
-                    <div id="pancake">
-                        <div id="pastry"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    @include("partials/app.app_loader")
     <!-- Loader End -->
 
     <!--  Header Start  -->
-    <header>
-        <!--Top Header Start -->
-        <div class="top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12 col-xs-12">
-                        <ul class="list-inline float-left icon">
-                            <li class="list-inline-item"><a href="#"><i class="icofont icofont-phone"></i> Hotline : 123
-                                    456 7890</a></li>
-                        </ul>
-                        <!-- Header Social Start -->
-                        <ul class="list-inline float-right icon">
-                            <li class="list-inline-item"><a href="shopping-cart.html"><i
-                                        class="icofont icofont-cart-alt"></i> Cart</a></li>
-                            <li class="list-inline-item dropdown">
-                                <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i
-                                        class="icofont icofont-ui-user"></i> My Account</a>
-                                <ul class="dropdown-menu dropdown-menu-right drophover"
-                                    aria-labelledby="dropdownMenuLink">
-                                    <li class="dropdown-item"><a href="login.html">Login</a></li>
-                                    <li class="dropdown-item"><a href="register.html">Register</a></li>
-                                </ul>
-                            </li>
-                            <li class="list-inline-item">
-                                <ul class="list-inline social">
-                                    <li class="list-inline-item"><a href="https://www.facebook.com/spheretheme/"
-                                            target="_blank"><i class="icofont icofont-social-facebook"></i></a></li>
-                                    <li class="list-inline-item"><a href="https://twitter.com/spheretheme/"
-                                            target="_blank"><i class="icofont icofont-social-twitter"></i></a></li>
-                                    <li class="list-inline-item"><a href="https://www.instagram.com/" target="_blank"><i
-                                                class="icofont icofont-social-instagram"></i></a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <!-- Header Social End -->
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--Top Header End -->
-
-        <div class="container">
-            <div class="row">
-
-                <div class="col col-md-9 col-sm-8 col-xs-8" style="display:flex">
-                    <!-- Logo Start  -->
-                    <div id="logo">
-                        <a href="index.html">
-                            <img id="logo_img" class="img-fluid" src="{{ asset('app_assets/images/logo/logo.png') }}"
-                                alt="Logo Me" title="logo" />
-                        </a>
-                    </div>
-                    <!-- Logo End  -->
-                </div>
-
-
-                <!-- <div class="col col-md-7 col-sm-4 col-xs-4"> -->
-                <!-- Main Menu Start  -->
-                <!-- <div id="menu">	
-                                <nav class="navbar navbar-expand-md">
-                                    <div class="navbar-header">
-                                        
-                                        <button data-target=".navbar-ex1-collapse" data-toggle="collapse" class="btn btn-navbar navbar-toggler" type="button"><i class="icofont icofont-navigation-menu"></i></button>
-                                    </div>
-                                    <div class="collapse navbar-collapse navbar-ex1-collapse padd0">
-                                        <ul class="nav navbar-nav">
-                                            <li class="nav-item dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">HOME</a>
-                                                <div class="dropdown-menu">
-                                                    <div class="dropdown-inner">
-                                                        <ul class="list-unstyled">
-                                                            <li><a href="index-1.html">Home Page One</a></li>
-                                                            <li><a href="index-2.html">Home page Two</a></li>
-                                                            <li><a href="index-3.html">home page Three</a></li>
-                                                            <li><a href="index-onepage.html">One Page</a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            
-                                            <li class="nav-item dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Our Menu</a>
-                                                <div class="dropdown-menu">
-                                                    <div class="dropdown-inner">
-                                                        <ul class="list-unstyled">
-                                                            <li><a href="menu.html">Menu Options 1</a></li>
-                                                            <li><a href="menu-2.html">Menu Options 2</a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="nav-item"><a href="about.html">about us</a></li>
-                                            <li class="nav-item dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">contact us</a>
-                                                <div class="dropdown-menu">
-                                                    <div class="dropdown-inner">
-                                                        <ul class="list-unstyled">
-                                                            <li><a href="contact-us.html">contact us 1</a></li>
-                                                            <li><a href="contact-us-2.html">contact us 2</a></li>
-                                                            <li><a href="contact-us-3.html">contact us 3</a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </nav>
-                            </div> -->
-                <!-- Main Menu End -->
-                <!-- </div> -->
-                <div class="col col-md-3 col-sm-4 col-xs-4 button-top paddleft">
-                    <a class="btn-primary btn" href='reservation.html'>Place your Order</a>
-                </div>
-            </div>
-        </div>
-    </header>
+    @include("partials/app.app_header")
     <!-- Header End   -->
 
     <!-- Banner Start -->
@@ -1387,178 +1254,21 @@
     </div>
     <!-- Reservation End  -->
 
-    <!-- Newsletter Start -->
-    <div id="newsletter">
-        <div class="container">
-            <div id="subscribe">
-                <!-- Subscribe Form -->
-                <form class="form-horizontal" name="subscribe">
-                    <div class="row">
-                        <div class="col-sm-6 col-md-7">
-                            <div class="input-group">
-                                <span class="news">newsletter</span>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam iaculis lorem augue, at
-                                    quam finibus eget.</p>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-5 form-group">
-                            <div class="input-group">
-                                <input value="" name="subscribe_email" id="subscribe_email" placeholder="Email"
-                                    type="text">
-                                <button class="btn btn-news" type="submit" value="submit">Send</button>
-                            </div>
-                        </div>
-                    </div>
-                </form>
-                <!-- Subscribe Form -->
-            </div>
-        </div>
-    </div>
-    <!-- Newsletter End -->
+    <!--  Newsletter Start  -->
+        @include("partials/app.app_newsletter")
+    <!-- Newsletter End   -->
 
-    <!-- Footer Start -->
-    <footer>
-        <div class="container">
-            <div class="row inner">
-                <div class="col-sm-6 col-md-6 col-lg-4">
-                    <!-- Footer Widget Start -->
-                    <h5>Contact Us</h5>
-                    <ul class="list-unstyled contact">
-                        <li><i class="icofont icofont-social-google-map"></i> 20, floor, Restaurant Food & Drinks, Nr,
-                            Queenslad Victoria Building, USA</li>
-                        <li><i class="icofont icofont-phone"></i> 1800 000 0000,<br>+88 123 1234 1234</li>
-                        <li><a href="#"><i class="icofont icofont-ui-message"></i>info@yourdomainname.com</a></li>
-                    </ul>
-                    <!-- Footer Widget End -->
-                </div>
-                <div class="col-sm-6 col-md-6 col-lg-4">
-                    <!-- Footer Widget Start -->
-                    <h5>Information</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#">About us</a></li>
-                        <li><a href="#">Delivery Information</a></li>
-                        <li><a href="#">Contact us</a></li>
-                        <li><a href="#">Terms & Conditions</a></li>
-                        <li><a href="#">Sitemap</a></li>
-                    </ul>
-                    <!-- Footer Widget End -->
-                </div>
-                <div class="col-sm-6 col-md-6 col-lg-4">
-                    <!-- Footer Widget Start -->
-                    <h5>Open Hours</h5>
-                    <ul class="list-unstyled">
-                        <li>Monday - Friday : 9 am to 12 am.</li>
-                        <li>Saturday - Sunday : 24 Hour Open</li>
-                        <li>Breakfast : 7 am to 12 pm</li>
-                        <li>Lunch : 12 pm to 7 pm</li>
-                        <li>Dinner : 7 am to 12 am</li>
-                    </ul>
-                    <!-- Footer Widget End -->
-                </div>
+    
+    @endsection
 
-            </div>
+    @section('footer')
+        @include("partials/app.app_footer")
+    @endsection
 
-        </div>
-        <div class="footer-bottom">
-            <div class="container">
-                <div class="row powered">
-                    <!--  Copyright Start -->
-                    <div class="col-md-3 col-sm-6 order-md-1">
-                        <img src="{{ asset('app_assets/images/logo/logo-white.png') }}" class="img-fluid" title="logo"
-                            alt="logo">
-                    </div>
-                    <div class="col-md-3 col-sm-6 text-right order-md-3">
-                        <!--  Footer Social Start -->
-                        <ul class="list-inline social">
-                            <li class="list-inline-item"><a href="https://www.facebook.com/spheretheme/"
-                                    target="_blank"><i class="icofont icofont-social-facebook"></i></a></li>
-                            <li class="list-inline-item"><a href="https://twitter.com/spheretheme/" target="_blank"><i
-                                        class="icofont icofont-social-twitter"></i></a></li>
-                            <li class="list-inline-item"><a href="https://plus.google.com/" target="_blank"><i
-                                        class="icofont icofont-social-google-plus"></i></a></li>
-                            <li class="list-inline-item"><a href="https://in.pinterest.com/" target="_blank"><i
-                                        class="icofont icofont-social-pinterest"></i></a></li>
-                            <li class="list-inline-item"><a href="https://www.instagram.com/" target="_blank"><i
-                                        class="icofont icofont-social-instagram"></i></a></li>
-                            <li class="list-inline-item"><a href="https://www.youtube.com/" target="_blank"><i
-                                        class="icofont icofont-social-youtube-play"></i></a></li>
-                        </ul>
-                        <!--  Footer Social End -->
-                    </div>
-                    <div class="col-md-6 col-sm-12 text-center order-md-2">
-                        <p>Copyright © <span>Steam Restaurant & Drinks</span> 2018. All Rights Reserved.</p>
-                    </div>
-                    <!--  Copyright End -->
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- Footer End  -->
 
-    <!-- Switch Style Start -->
-    @yield('menu')
-    <div class="style-customizer closed">
-        <a class="opener" href="#"><i class="icofont icofont-navigation-menu"></i></a>
-        <div class="buy-button">
-            <a href="index.html" class="customizer-logo">
-                <img src="{{ asset('app_assets/images/logo/logo-gray.png') }}" alt="Theme Logo">
-            </a>
-            <div class="buy-now">
-                <a class="btn btn-theme btn-md" target="new"
-                    href="https://themeforest.net/item/steam-restaurant-food-drinks-html-5-website-template/21212196">Buy
-                    now!</a>
-            </div>
-        </div>
-        <div class="clearfix content-chooser">
-            <h3>Layout Options</h3>
-            <p>Which layout option you want to use?</p>
-            <ul class="layoutstyle clearfix">
-                <li class="wide-layout selected" data-style="wide-layout" title="wide"> Wide </li>
-                <li class="boxed-layout" data-style="boxed-layout" title="boxed"> Boxed </li>
-            </ul>
-            <h3>Color Schemes</h3>
-            <p>Which theme color you want to use? Select from here.</p>
-            <ul class="styleChange clearfix">
-                <li class="skin-default selected" title="skin-default" data-style="skin-default"></li>
-                <li class="color-1" title="color-1" data-style="color-1"></li>
-                <li class="color-2" title="color-2" data-style="color-2"></li>
-                <li class="color-3" title="color-3" data-style="color-3"></li>
-                <li class="color-4" title="color-4" data-style="color-4"></li>
-                <li class="color-5" title="color-5" data-style="color-5"></li>
-                <li class="color-6" title="color-6" data-style="color-6"></li>
-                <li class="color-7" title="color-7" data-style="color-7"></li>
-                <li class="color-8" title="color-8" data-style="color-8"></li>
-                <li class="color-9" title="color-9" data-style="color-9"></li>
-                <li class="color-10" title="color-10" data-style="color-10"></li>
-                <li class="color-11" title="color-11" data-style="color-11"></li>
-            </ul>
-            <h3>Header Style</h3>
-            <p>Which Header Style you want to use? Select from here.</p>
-            <ul class="headerChange clearfix">
-                <li class="header-0" data-style="header-0" title="Default Header">0</li>
-                <li class="header-1" data-style="header-1" title="Header Color">1</li>
-                <li class="header-2" data-style="header-2" title="Sticky Header">2</li>
-            </ul>
-            <h3>Background Style</h3>
-            <p>Which background Style you want to use? Select from here.</p>
-            <ul class="backgroundChange clearfix">
-                <li class="main-bg-1" data-style="main-bg-1" title="Background 1"></li>
-                <li class="main-bg-2" data-style="main-bg-2" title="Background 2"></li>
-                <li class="main-bg-3" data-style="main-bg-3" title="Background 3"></li>
-                <li class="main-bg-4" data-style="main-bg-4" title="Background 4"></li>
-                <li class="main-bg-5" data-style="main-bg-5" title="Background 5"></li>
-                <li class="main-bg-6" data-style="main-bg-6" title="Background 6"></li>
-                <li class="main-bg-7" data-style="main-bg-7" title="Background 7"></li>
-                <li class="main-bg-8" data-style="main-bg-8" title="Background 8"></li>
-            </ul>
+    @section('menu')
+        @include("partials/app.app_menu")
+    @endsection
 
-            <ul class="resetAll">
-                <li><a class="btn btn-theme btn-md btn-block button-reset" href="#">Reset All</a></li>
-            </ul>
-        </div>
-    </div>
-    <!-- Switch Style End -->
 
-</div>
 
-@endsection

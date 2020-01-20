@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
-use App\User;
+use App\Models\User;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
@@ -34,7 +34,7 @@ class RegisterController extends Controller
        if (Auth::user()->user_role == "user")
        {
             //take the guy to intendended URL, else return to userdashboard
-            return  url()->previous('/user_dashboard');
+            return  url()->previous('/dashboard');
        }
        else{
             //take the guy to intendended URL, else return to admindashboard

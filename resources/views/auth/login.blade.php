@@ -45,7 +45,7 @@
                       </div>
                     </div>
                     <div class="mt-3 mb-4 mt-md-4 mb-md-5">
-                      <p>Don't have an account?<br><a class="text-white text-underline" href="register.html">Get started!</a></p>
+                      <p>Don't have an account?<br><a class="text-white text-underline" href="{{ route('register') }}">Get started!</a></p>
                       <p class="mb-0 mt-4 mt-md-5 fs--1 font-weight-semi-bold text-300">Read our <a class="text-underline text-300" href="#!">terms</a> and <a class="text-underline text-300" href="#!">conditions </a></p>
                     </div>
                   </div>

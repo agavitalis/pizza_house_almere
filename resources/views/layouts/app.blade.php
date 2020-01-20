@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    
-<!-- Mirrored from www.spheretheme.com/html/steam/index-3.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Jan 2020 13:03:27 GMT -->
-<head>
+    <head>
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -31,30 +29,42 @@
         <link href="#" data-style="styles" rel="stylesheet">
     </head>
     <body>
-        @yield('content')
-        
-        <!-- jquery -->
-        <script src="{{ asset('app_assets/libs/jquery/jquery.min.js') }}"></script>
-        <!-- jquery Validate -->
-        <script src="{{ asset('app_assets/libs/jquery-validation/jquery.validate.min.js') }}"></script>
-        <!-- popper js -->
-        <script src="{{ asset('app_assets/libs/popper/popper.min.js') }}"></script>
-        <!-- bootstrap js -->
-        <script src="{{ asset('app_assets/libs/bootstrap-4.0.0-dist/js/bootstrap.min.js') }}"></script>
-        <!-- owlcarousel js -->
-        <script src="{{ asset('app_assets/libs/owlcarousel2/owl.carousel.min.js') }}"></script>
-        <!--inview js code-->
-        <script src="{{ asset('app_assets/libs/jquery.inview/jquery.inview.min.js') }}"></script>
-        <!--CountTo js code-->
-        <script src="{{ asset('app_assets/libs/jquery.countTo/jquery.countTo.js') }}"></script>
-        <!-- Animated Headlines js code-->
-        <script src="{{ asset('app_assets/libs/animated-headlines/animated-headlines.js') }}"></script>
-        <!-- mb.YTPlayer js code-->
-        <script src="{{ asset('app_assets/libs/mb.YTPlayer/jquery.mb.YTPlayer.min.js') }}"></script>
-        <!-- Switch Style js -->
-        <script src="{{ asset('app_assets/switch-style/switch-style.js') }}"></script>
-        <!--internal js-->
-        <script src="{{ asset('app_assets/js/internal.js') }}"></script>
+        <div class="wrapper">
+            <!--Body Start -->
+                @yield('content')
+            <!--Body Start -->
+
+            <!-- Footer Start -->
+                @yield('footer')
+            <!-- Footer End -->
+
+            <!-- Menu Start -->
+                @yield('menu')
+            <!-- Menu End -->
+            
+            <!-- jquery -->
+            <script src="{{ asset('app_assets/libs/jquery/jquery.min.js') }}"></script>
+            <!-- jquery Validate -->
+            <script src="{{ asset('app_assets/libs/jquery-validation/jquery.validate.min.js') }}"></script>
+            <!-- popper js -->
+            <script src="{{ asset('app_assets/libs/popper/popper.min.js') }}"></script>
+            <!-- bootstrap js -->
+            <script src="{{ asset('app_assets/libs/bootstrap-4.0.0-dist/js/bootstrap.min.js') }}"></script>
+            <!-- owlcarousel js -->
+            <script src="{{ asset('app_assets/libs/owlcarousel2/owl.carousel.min.js') }}"></script>
+            <!--inview js code-->
+            <script src="{{ asset('app_assets/libs/jquery.inview/jquery.inview.min.js') }}"></script>
+            <!--CountTo js code-->
+            <script src="{{ asset('app_assets/libs/jquery.countTo/jquery.countTo.js') }}"></script>
+            <!-- Animated Headlines js code-->
+            <script src="{{ asset('app_assets/libs/animated-headlines/animated-headlines.js') }}"></script>
+            <!-- mb.YTPlayer js code-->
+            <script src="{{ asset('app_assets/libs/mb.YTPlayer/jquery.mb.YTPlayer.min.js') }}"></script>
+            <!-- Switch Style js -->
+            <script src="{{ asset('app_assets/switch-style/switch-style.js') }}"></script>
+            <!--internal js-->
+            <script src="{{ asset('app_assets/js/internal.js') }}"></script>
+        </div>
     </body>
 
 </html>

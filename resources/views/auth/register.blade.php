@@ -57,6 +57,7 @@
                     <div class="p-4 p-md-5 flex-grow-1">
                       <h3>Register</h3>
                       <form method="POST" action="{{ route('register') }}">
+                        @csrf
                         <div class="form-group">
                           <label for="card-name">Name</label>
                           <input id="card-name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus >

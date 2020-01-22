@@ -45,12 +45,12 @@
                     <div class="position-relative p-4 pt-md-5 pb-md-7">
                       <div class="bg-holder bg-auth-card-shape" style="background-image:url({{ asset('admin_assets/img/illustrations/half-circle.png') }});"></div>
                       <!--/.bg-holder-->
-                      <div class="z-index-1 position-relative"><a class="text-white mb-4 text-sans-serif font-weight-extra-bold fs-4 d-inline-block" href="../../index-2.html">falcon</a>
+                      <div class="z-index-1 position-relative"><a class="text-white mb-4 text-sans-serif font-weight-extra-bold fs-4 d-inline-block" href="/">PizzaHouse</a>
                         <p class="text-100">With the power of Falcon, you can now focus only on functionaries for your digital products, while leaving the UI design on us!</p>
                       </div>
                     </div>
                     <div class="mt-3 mb-4 mt-md-4 mb-md-5">
-                      <p class="pt-3">Have an account?<br><a class="btn btn-outline-light mt-2 px-4" href="login.html">Log In</a></p>
+                      <p class="pt-3">Have an account?<br><a class="btn btn-outline-light mt-2 px-4" href="{{ route('login') }}">Log In</a></p>
                     </div>
                   </div>
                   <div class="col-md-7 d-flex flex-center">
@@ -147,5 +147,4 @@
   </body>
 
 
-<!-- Mirrored from prium.github.io/falcon/v1.9.0/authentication/card/register.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 16 Nov 2019 18:30:47 GMT -->
 </html>

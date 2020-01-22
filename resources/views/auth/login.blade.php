@@ -40,7 +40,7 @@
                     <div class="position-relative p-4 pt-md-5 pb-md-7">
                       <div class="bg-holder bg-auth-card-shape" style="background-image:url({{ asset('admin_assets/img/illustrations/half-circle.png') }});"></div>
                       <!--/.bg-holder-->
-                      <div class="z-index-1 position-relative"><a class="text-white mb-4 text-sans-serif font-weight-extra-bold fs-4 d-inline-block" href="../../index-2.html">falcon</a>
+                      <div class="z-index-1 position-relative"><a class="text-white mb-4 text-sans-serif font-weight-extra-bold fs-4 d-inline-block" href="/">PizzaHouse</a>
                         <p class="text-100">With the power of Falcon, you can now focus only on functionaries for your digital products, while leaving the UI design on us!</p>
                       </div>
                     </div>

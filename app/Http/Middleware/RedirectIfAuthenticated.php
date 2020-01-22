@@ -20,15 +20,14 @@ class RedirectIfAuthenticated
     {
         if (Auth::guard($guard)->check()) {
             
-            if (Auth::user()->user_role == "user")
+            if (Auth::user()->user_type == "user")
             {
-                    //take the guy to intendended URL, else return to userdashboard
-                    return  url()->previous('/dashboard');
+                return redirect('/dashboard');
             }
             else{
-                    //take the guy to intendended URL, else return to admindashboard
-                    return  url()->previous('/admin_dashboard');
+                return  redirect('/admin_dashboard');
             }
+           
         }
 
         return $next($request);

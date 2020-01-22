@@ -6,6 +6,12 @@ Route::group(['namespace'=>"Appp"],function(){
     Route::get('/', 'IndexController@index')->name('index');
     Route::get('/menu', 'IndexController@menu')->name('menu');
     Route::get('/contact', 'IndexController@contact')->name('contact');
+    Route::get('/about', 'IndexController@about')->name('about');
+    Route::get('/reservation', 'IndexController@reservation')->name('reservation');
+    Route::get('/search', 'IndexController@search')->name('search');
+    Route::get('/pizza_details', 'IndexController@pizza_details')->name('pizza_details');
+
+    Route::get('/cart', 'IndexController@cart')->name('cart');
     
 });
 

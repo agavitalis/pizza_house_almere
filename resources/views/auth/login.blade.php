@@ -41,7 +41,7 @@
                       <div class="bg-holder bg-auth-card-shape" style="background-image:url({{ asset('admin_assets/img/illustrations/half-circle.png') }});"></div>
                       <!--/.bg-holder-->
                       <div class="z-index-1 position-relative"><a class="text-white mb-4 text-sans-serif font-weight-extra-bold fs-4 d-inline-block" href="/">PizzaHouse</a>
-                        <p class="text-100">With the power of Falcon, you can now focus only on functionaries for your digital products, while leaving the UI design on us!</p>
+                        <p class="text-100">Verse en heerlijke pizza, bereid om je dag goed te maken. Grijp de jouwe nu!</p>
                       </div>
                     </div>
                     <div class="mt-3 mb-4 mt-md-4 mb-md-5">

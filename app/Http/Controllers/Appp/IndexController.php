@@ -31,4 +31,34 @@ class IndexController extends Controller
     {
         return view('menu');
     }
+
+    public function about()
+    {
+        return view('about');
+    }
+
+    public function contact()
+    {
+        return view('contact');
+    }
+
+    public function reservation()
+    {
+        return view('reservation');
+    }
+
+    public function search()
+    {
+        return view('search');
+    }
+
+    public function pizza_details()
+    {
+        return view('pizza_details');
+    }
+
+    public function cart()
+    {
+        return view('shopping_cart');
+    }
 }

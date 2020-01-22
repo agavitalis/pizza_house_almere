@@ -10,7 +10,7 @@
                         </ul>
                         <!-- Header Social Start -->
                         <ul class="list-inline float-right icon">
-                            <li class="list-inline-item"><a href="shopping-cart.html"><i
+                            <li class="list-inline-item"><a href="/cart"><i
                                         class="icofont icofont-cart-alt"></i> Cart</a></li>
                             <li class="list-inline-item dropdown">
                             @guest
@@ -71,7 +71,7 @@
                 <div class="col col-md-9 col-sm-8 col-xs-8" style="display:flex">
                     <!-- Logo Start  -->
                     <div id="logo">
-                        <a href="index.html">
+                        <a href="/">
                             <img id="logo_img" class="img-fluid" src="{{ asset('app_assets/images/logo/logo.png') }}"
                                 alt="Logo Me" title="logo" />
                         </a>
@@ -132,7 +132,7 @@
                 <!-- Main Menu End -->
                 <!-- </div> -->
                 <div class="col col-md-3 col-sm-4 col-xs-4 button-top paddleft">
-                    <a class="btn-primary btn" href='reservation.html'>Place your Order</a>
+                    <a class="btn-primary btn" href='/menu'>Place your Order</a>
                 </div>
             </div>
         </div>

@@ -12,6 +12,7 @@
 
         <!-- Bootstrap stylesheet -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <!-- <link href="{{ asset('app_assets/libs/bootstrap-4.0.0-dist/css/bootstrap.min.css') }}" rel="stylesheet"> -->
         <!-- icofont -->
         <link href="{{ asset('app_assets/libs/icofont/css/icofont.css') }}" rel="stylesheet" type="text/css" />
@@ -19,12 +20,12 @@
         <link href="{{ asset('app_assets/libs/owlcarousel2/assets/owl.carousel.min.css') }}" rel="stylesheet" type="text/css" />
         <!-- Animated Headlines css -->
         <link href="{{ asset('app_assets/libs/animated-headlines/animated-headlines.css') }}" rel="stylesheet" type="text/css" />
-        <!-- mb.YTPlayer css -->
-        <link href="{{ asset('app_assets/libs/mb.YTPlayer/css/jquery.mb.YTPlayer.min.css') }}" rel="stylesheet" type="text/css" />
-        <!-- Switch Style css -->
+       <!-- Switch Style css -->
         <link href="{{ asset('app_assets/switch-style/switch-style.css') }}" rel="stylesheet" type="text/css"/>
         <!-- Theme Stylesheet -->
         <link href="{{ asset('app_assets/css/style.css') }}" rel="stylesheet" type="text/css"/>
+        <!-- Mini Cart CSS -->
+        <link href="{{ asset('app_assets/css/minicart.css') }}" rel="stylesheet" type="text/css"/>
         <!-- Switch Color Style css -->
         <link href="#" data-style="styles" rel="stylesheet">
     </head>
@@ -50,6 +51,8 @@
             <script src="{{ asset('app_assets/libs/popper/popper.min.js') }}"></script>
             <!-- bootstrap js -->
             <script src="{{ asset('app_assets/libs/bootstrap-4.0.0-dist/js/bootstrap.min.js') }}"></script>
+             <!-- cart-js -->
+             <script src="{{asset('app_assets/js/minicart.js')}}"></script>
             <!-- owlcarousel js -->
             <script src="{{ asset('app_assets/libs/owlcarousel2/owl.carousel.min.js') }}"></script>
             <!--inview js code-->
@@ -58,12 +61,22 @@
             <script src="{{ asset('app_assets/libs/jquery.countTo/jquery.countTo.js') }}"></script>
             <!-- Animated Headlines js code-->
             <script src="{{ asset('app_assets/libs/animated-headlines/animated-headlines.js') }}"></script>
-            <!-- mb.YTPlayer js code-->
-            <script src="{{ asset('app_assets/libs/mb.YTPlayer/jquery.mb.YTPlayer.min.js') }}"></script>
-            <!-- Switch Style js -->
+              <!-- Switch Style js -->
             <script src="{{ asset('app_assets/switch-style/switch-style.js') }}"></script>
             <!--internal js-->
             <script src="{{ asset('app_assets/js/internal.js') }}"></script>
+
+           
+            <script>
+                shopping.minicarts.render(); //use only unique class names other than shopping.minicarts.Also Replace same class name in css and minicart.min.js
+                $('.minicarts-increase').click(function(e){
+                    e.preventDefault();
+                })
+
+              
+            </script>
+            <!-- //cart-js -->
+            
         </div>
     </body>
 

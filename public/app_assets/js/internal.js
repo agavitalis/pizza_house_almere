@@ -89,19 +89,7 @@ $(function () {
     });
     /*Fun Factor Script Code End */
 
-    /* Video Background Script Code Start */
-    $(".video-bg").YTPlayer({
-        mute: true,
-        loop: true,
-        showControls: false,
-        showYTLogo: false,
-        grayscale: 21,
-        hue_rotate: 66,
-        invert: 16,
-        sepia: 12,
-        opacity: 11
-    });
-    /* Video Background Script Code End */
+    
 
     /* Sticky header Start */
     $(window).on('scroll', function (e) {

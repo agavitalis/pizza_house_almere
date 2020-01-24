@@ -2,9 +2,7 @@
 
 @section('content')
 
-    <!--[if lt IE 8]>
-               <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
+   
 
     <!-- Loader Start -->
     
@@ -16,9 +14,7 @@
 
     <!-- Banner Start -->
     <div class="banner-bg">
-        <div class="video-bg"
-            data-property="{videoURL:'https://youtu.be/95SNbn340TE',containment:'.banner-bg',autoPlay:true, mute:true, startAt:0, opacity:1}">
-        </div>
+        
         <!-- Banner Detail Start  -->
         <div class="banner-detail">
             <div class="container">
@@ -85,10 +81,32 @@
                     </ul>
                     <img src="{{ asset('app_assets/images/lines.png') }}" alt="line" title="line" class="img-fluid" />
                 </div>
+                
             </div>
         </div>
     </div>
     <!-- Order End  -->
+
+        <div class="add-cart">
+            <form action="#" method="post">
+              <fieldset>
+                @csrf
+                <input type="hidden" name="cmd" value="_cart" />
+                <input type="hidden" name="add" value="1" />
+                <input type="hidden" name="business" value=" " />
+                <input type="hidden" name="item_number" value="4" />
+                <input type="hidden" name="item_name" value="Pizza man" />
+                <input type="hidden" name="amount" value="200" />
+                <input type="hidden" name="discount_amount" value="4" />
+                <input type="hidden" name="currency_code" value="NGN" />
+                <input type="hidden" name="return" value=" " />
+                <input type="hidden" name="cancel_return" value=" " />
+                <input type="submit" name="submit" value="Add to cart" class="button btn" />
+              </fieldset>
+            </form>
+        </div>
+
+
 
     <!-- Popular Dishes Start -->
     <div class="dishes no-border">
@@ -119,8 +137,25 @@
                                 </div>
                                 <div class="form-group col-xs-12 col-md-12">
                                     <div class="text-center">
-                                        <button class="btn btn-theme btn-xs">+<i
-                                                class="icofont icofont-cart-alt"></i></i>Add to Cart</button>
+                                    <div class="add-cart">
+                                        <form action="#" method="post">
+                                            <fieldset>
+                                                @csrf
+                                                <input type="hidden" name="cmd" value="_cart" />
+                                                <input type="hidden" name="add" value="1" />
+                                                <input type="hidden" name="business" value=" " />
+                                                <input type="hidden" name="item_number" value="4" />
+                                                <input type="hidden" name="item_name" value="Pizza man" />
+                                                <input type="hidden" name="amount" value="200" />
+                                                <input type="hidden" name="discount_amount" value="4" />
+                                                <input type="hidden" name="currency_code" value="NGN" />
+                                                <input type="hidden" name="return" value=" " />
+                                                <input type="hidden" name="cancel_return" value=" " />
+                                                <input type="submit" name="submit" value="Add to cart" class="button btn" />
+                                            </fieldset>
+                                        </form>
+                                    </div>
+
                                     </div>
                                 </div>
                             </div>

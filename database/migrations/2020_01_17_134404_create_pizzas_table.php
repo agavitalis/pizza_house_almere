@@ -15,12 +15,14 @@ class CreatePizzasTable extends Migration
     {
         Schema::create('pizzas', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('name');
-            $table->text('description')->nullable();
+            $table->string('pizza_name');
+            $table->text('pizza_description')->nullable();
             $table->string('flavour');
             $table->string('price');
             $table->string('old_price')->nullable();
             $table->boolean('in_stock')->default(1);
+            $table->string('display_picture_path')->nullable();
+            $table->string('display_picture_name')->nullable();
             $table->bigInteger('menu_id');
             $table->timestamps();
         });

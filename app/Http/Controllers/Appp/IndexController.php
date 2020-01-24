@@ -4,6 +4,8 @@ namespace App\Http\Controllers\Appp;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Models\Menu;
+use App\Models\Pizza;
 
 class IndexController extends Controller
 {
@@ -22,9 +24,46 @@ class IndexController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function index()
+    public function index(Request $request, $per_page = 10)
     {
-        return view('index');
+        //get all the menu
+        if($request->isMethod('GET')){
+
+            $menu_array = array();
+            $menu_pizza_array = array();
+            $complete_menu = array();
+            $menus = Menu::inRandomOrder()->limit(6)->get();
+            //push the pagination 
+            $pagination = $menus;
+    
+            foreach ($menus as $menu) {
+                
+                try{
+    
+                    $menu_pizza = Menu::find($menu->id)->pizzas;
+                    $menu_pizza_array = array("menu_pizza" => $menu_pizza);                   
+        
+                }catch(Exception $e){
+                    //
+                }finally{
+    
+                   $menu_array = array("menu" => $menu);
+                   $temp_array = array_merge($menu_array,$menu_pizza_array);
+                   array_push($complete_menu,$temp_array);
+    
+                    //clear the values
+                    $menu_array = array();
+                    $menu_pizza_array = array();
+                    $temp_array = array();
+    
+                }
+            
+            }
+            //dd($complete_menu);
+            return view('index', compact('complete_menu','menus'));
+    
+        }
+       
     }
 
     public function menu()

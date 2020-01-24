@@ -23,8 +23,8 @@ class MenuController extends Controller
         }
 
         $menu = new Menu();
-        $menu->name =  $request->input('menu_name');
-        $menu->description = $request->menu_description;
+        $menu->menu_name =  $request->input('menu_name');
+        $menu->menu_description = $request->menu_description;
         $menu->created_by = Auth::user()->id;
         $menu->save();
 

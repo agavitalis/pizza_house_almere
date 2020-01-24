@@ -15,8 +15,8 @@ class CreateMenusTable extends Migration
     {
         Schema::create('menus', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('name');
-            $table->text('description')->nullable();
+            $table->string('menu_name');
+            $table->text('menu_description')->nullable();
             $table->bigInteger('created_by');
             $table->timestamps();
         });

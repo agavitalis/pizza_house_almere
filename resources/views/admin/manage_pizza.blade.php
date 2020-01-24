@@ -30,7 +30,10 @@
     </div>
 </div>
 <div class="card mb-3">
+
+
     <div class="card-body p-0 overflow-hidden">
+    @foreach($pizzas as $pizza)
         <div class="row no-gutters">
             <div class="col-12 p-3">
                 <div class="p-1">
@@ -39,20 +42,21 @@
                             <div class="position-relative h-sm-100"><a class="d-block h-100"
                                     href="product-details.html"><img
                                         class="img-fluid fit-cover w-sm-100 h-sm-100 rounded absolute-sm-centered"
-                                        src="../assets/img/products/2.jpg" alt="" /></a>
+                                        src="{{$pizza->display_picture_path}}" alt="" /></a>
 
                             </div>
                         </div>
+                    
                         <div class="col-sm-7 col-md-8">
                             <div class="row">
                                 <div class="col-lg-8">
                                     <h5 class="mt-3 mt-sm-0"><a class="text-dark fs-0 fs-lg-1"
-                                            href="product-details.html">Cry of Omailnze</a></h5>
-                                    <p class="fs--1 mb-2 mb-md-3"><a class="text-500" href="#!">Archieve Description</a>
+                                            href="product-details.html">{{$pizza->name}}</a></h5>
+                                    <p class="fs--1 mb-2 mb-md-3">
+                                        <a class="text-500" href="#!">Flavour: {{$pizza->flavour}}</a>
                                     </p>
-                                    <p>Over the years, Apple has built a reputation for releasing its. Rather, Apple’s
-                                        latest pro laptop experienced a subdued launch, in spite of it off. And, as with
-                                        previous generations the 15-inch MacBook Pro arrives alongside a 13-inch model.
+                                    <p>
+                                        {{$pizza->description}}
                                     </p>
                                    
                                 </div>
@@ -93,17 +97,11 @@
                 </div>
             </div>
 
-
         </div>
+    @endforeach
     </div>
     <div class="card-footer border-top d-flex justify-content-center">
-        <div><button class="btn btn-falcon-default btn-sm mr-1 mr-sm-2" type="button" disabled data-toggle="tooltip"
-                data-placement="top" title="Prev"><span class="fas fa-chevron-left"></span></button><a
-                class="btn btn-sm btn-falcon-default text-primary mr-2" href="#!">1</a><a
-                class="btn btn-sm btn-falcon-default mr-2" href="#!">2</a><a class="btn btn-sm btn-falcon-default mr-2"
-                href="#!"><span class="fas fa-ellipsis-h"></span></a><a class="btn btn-sm btn-falcon-default mr-2"
-                href="#!">35</a><button class="btn btn-falcon-default btn-sm" type="button" data-toggle="tooltip"
-                data-placement="top" title="Next"><span class="fas fa-chevron-right"></span></button></div>
+        <div>{{$pizzas->links()}}</div>
     </div>
 </div>
 @endsection 

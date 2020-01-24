@@ -26,10 +26,10 @@ class PizzaController extends Controller
 
        //save the pizza and the images
        $pizza = new Pizza();
-       $pizza->name = $request->pizza_name;
+       $pizza->pizza_name = $request->pizza_name;
        $pizza->flavour = $request->pizza_flavour;
        $pizza->price = $request->pizza_price;
-       $pizza->description = $request->pizza_description;
+       $pizza->pizza_description = $request->pizza_description;
        $pizza->menu_id = $request->menu;
        $pizza->save();
 
@@ -51,6 +51,10 @@ class PizzaController extends Controller
             }
        }
 
+       //then save the display picture of this pizza
+       $display_picture = Picture::where(['pizza_id'=>$pizza->id])->first();
+       Pizza::where(['id'=>$pizza->id])->update(['display_picture_path'=>$display_picture->path,'display_picture_name'=>$display_picture->name]);
+
        return back()->with('success', 'Pizza Created');
 
     }
@@ -59,39 +63,8 @@ class PizzaController extends Controller
         
         if($request->isMethod('GET')){
 
-        $pizza_array = array();
-        $pizza_pictures_array = array();
-        
-        $complete_pizzas = array();
-        $pizzas = Pizza::paginate($per_page);
-        //push the pagination 
-        $pagination = $pizzas;
-
-        foreach ($pizzas as $pizza) {
-            
-            try{
-
-                $picture_url = Pizza::find($pizza->id)->pictures;
-                $pizza_pictures_array = array("picture_url" => $picture_url);
-    
-            }catch(Exception $e){
-                //
-            }finally{
-
-               $pizza_array = array("pizza" => $pizza);
-               $temp_array = array_merge($pizza_array,$pizza_pictures_array);
-               array_push($complete_pizzas,$temp_array);
-
-                //clear the values
-                $pizza_array = array();
-                $pizza_pictures_array = array();
-                $temp_array = array();
-
-            }
-        
-        }
-        dd($complete_pizzas);
-        return view('admin.manage_pizza', compact('complete_pizzas','pagination'));
+            $pizzas = Pizza::paginate($per_page);
+            return view('admin.manage_pizza', compact('pizzas'));
 
         }
 

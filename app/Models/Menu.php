@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Menu extends Model
 {
     protected $fillable =[
-        'name','description','created_by'
+        'menu_name','menu_description','created_by'
     ];
 
     public function pizzas()

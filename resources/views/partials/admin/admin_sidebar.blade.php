@@ -78,6 +78,23 @@
                             class="badge badge-pill ml-2 badge-soft-primary">new</span></div>
                 </a>
             </li>
-        </ul><a class="btn btn-primary btn-sm btn-block my-3" href="/logout">Log out</a>
+        </ul>
+                           
+        <a class="btn btn-success btn-sm btn-block my-3" href="/">View Site</a>
+        <div class="px-3 px-xl-0">
+            <hr class="border-300 my-2" />
+        </div>
+      
+        <a class="btn btn-primary btn-sm btn-block my-3" href="{{ route('logout') }}"
+        onclick="event.preventDefault();
+                        document.getElementById('logout-form').submit();">
+            {{ __('Logout') }}
+        </a>
+
+        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+            @csrf
+        </form>
+
+      
     </div>
 </nav>

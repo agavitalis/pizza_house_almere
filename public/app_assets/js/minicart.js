@@ -1906,7 +1906,7 @@
 
       parent: (typeof document !== 'undefined') ? document.body : null,
 
-      action: '/user_cart',
+      action: '/cart',
 
       target: '',
 

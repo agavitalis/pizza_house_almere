@@ -11,7 +11,7 @@ Route::group(['namespace'=>"Appp"],function(){
     Route::get('/search', 'IndexController@search')->name('search');
     Route::get('/pizza_details', 'IndexController@pizza_details')->name('pizza_details');
 
-    Route::get('/cart', 'IndexController@cart')->name('cart');
+    Route::post('/cart', 'CartController@cart')->name('cart');
     
 });
 

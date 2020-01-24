@@ -93,8 +93,5 @@ class IndexController extends Controller
         return view('pizza_details');
     }
 
-    public function cart()
-    {
-        return view('shopping_cart');
-    }
+   
 }

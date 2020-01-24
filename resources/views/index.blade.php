@@ -138,7 +138,7 @@
                                 <div class="form-group col-xs-12 col-md-12">
                                     <div class="text-center">
                                     <div class="add-cart">
-                                        <form action="#" method="post">
+                                        <form action="/cart" method="post">
                                             <fieldset>
                                                 @csrf
                                                 <input type="hidden" name="cmd" value="_cart" />

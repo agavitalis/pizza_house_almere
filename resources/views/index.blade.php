@@ -87,27 +87,6 @@
     </div>
     <!-- Order End  -->
 
-        <div class="add-cart">
-            <form action="#" method="post">
-              <fieldset>
-                @csrf
-                <input type="hidden" name="cmd" value="_cart" />
-                <input type="hidden" name="add" value="1" />
-                <input type="hidden" name="business" value=" " />
-                <input type="hidden" name="item_number" value="4" />
-                <input type="hidden" name="item_name" value="Pizza man" />
-                <input type="hidden" name="amount" value="200" />
-                <input type="hidden" name="discount_amount" value="4" />
-                <input type="hidden" name="currency_code" value="NGN" />
-                <input type="hidden" name="return" value=" " />
-                <input type="hidden" name="cancel_return" value=" " />
-                <input type="submit" name="submit" value="Add to cart" class="button btn" />
-              </fieldset>
-            </form>
-        </div>
-
-
-
     <!-- Popular Dishes Start -->
     <div class="dishes no-border">
         <div class="container">
@@ -137,24 +116,24 @@
                                 </div>
                                 <div class="form-group col-xs-12 col-md-12">
                                     <div class="text-center">
-                                    <div class="add-cart">
-                                        <form action="/cart" method="post">
-                                            <fieldset>
-                                                @csrf
-                                                <input type="hidden" name="cmd" value="_cart" />
-                                                <input type="hidden" name="add" value="1" />
-                                                <input type="hidden" name="business" value=" " />
-                                                <input type="hidden" name="item_number" value="4" />
-                                                <input type="hidden" name="item_name" value="Pizza man" />
-                                                <input type="hidden" name="amount" value="200" />
-                                                <input type="hidden" name="discount_amount" value="4" />
-                                                <input type="hidden" name="currency_code" value="NGN" />
-                                                <input type="hidden" name="return" value=" " />
-                                                <input type="hidden" name="cancel_return" value=" " />
-                                                <input type="submit" name="submit" value="Add to cart" class="button btn" />
-                                            </fieldset>
-                                        </form>
-                                    </div>
+                                        <div class="add-cart">
+                                            <form action="/cart" method="post">
+                                                <fieldset>
+                                                    @csrf
+                                                    <input type="hidden" name="cmd" value="_cart" />
+                                                    <input type="hidden" name="add" value="1" />
+                                                    <input type="hidden" name="business" value=" " />
+                                                    <input type="hidden" name="item_number" value="{{$popular_item->id}}" />
+                                                    <input type="hidden" name="item_name" value="{{$popular_item->pizza_name}}" />
+                                                    <input type="hidden" name="amount" value="{{$popular_item->price}}" />
+                                                    <input type="hidden" name="discount_amount" value="0.00" />
+                                                    <input type="hidden" name="currency_code" value="NGN" />
+                                                    <input type="hidden" name="return" value=" " />
+                                                    <input type="hidden" name="cancel_return" value=" " />
+                                                    <input type="submit" name="submit" value="Add to cart" class="button btn" />
+                                                </fieldset>
+                                            </form>
+                                        </div>
 
                                     </div>
                                 </div>
@@ -232,10 +211,29 @@
                                                 <div class="price">
                                                     <div class="text-center">${{$menu_pizza->price}}</div>
                                                     <div class="text-center mt-3">
-                                                        <button type="submit" class="btn btn-theme btn-sm">+<i
-                                                                class="icofont icofont-cart-alt"> <span
-                                                                    class="d-sm-block d-md-none text-white">Add to
-                                                                    Cart</span></i></button>
+                                                        <div class="add-cart">
+                                                            <form action="/cart" method="post">
+                                                                <fieldset>
+                                                                    @csrf
+                                                                    <input type="hidden" name="cmd" value="_cart" />
+                                                                    <input type="hidden" name="add" value="1" />
+                                                                    <input type="hidden" name="business" value=" " />
+                                                                    <input type="hidden" name="item_number" value="{{$menu_pizza->id}}" />
+                                                                    <input type="hidden" name="item_name" value="{{$menu_pizza->pizza_name}}" />
+                                                                    <input type="hidden" name="amount" value="{{$menu_pizza->price}}" />
+                                                                    <input type="hidden" name="discount_amount" value="0.00" />
+                                                                    <input type="hidden" name="currency_code" value="NGN" />
+                                                                    <input type="hidden" name="return" value=" " />
+                                                                    <input type="hidden" name="cancel_return" value=" " />
+                                                                    <button type="submit" class="button btn-theme btn-sm" >+
+                                                                        <i class="icofont icofont-cart-alt">
+                                                                            <span class="d-sm-block d-md-none text-white">Add to Cart</span>     
+                                                                        </i>
+                                                                    </button>
+                                                                </fieldset>
+                                                            </form>
+                                                        </div>
+                                                       
                                                     </div>
                                                 </div>
 

@@ -10,8 +10,18 @@
                         </ul>
                         <!-- Header Social Start -->
                         <ul class="list-inline float-right icon">
-                            <li class="list-inline-item"><a href="/cart"><i
-                                        class="icofont icofont-cart-alt"></i> Cart</a></li>
+                            <li class="list-inline-item">
+
+                                <form action="#" method="post" class="last">
+                                    <input type="hidden" name="cmd" value="_cart">
+                                    <input type="hidden" name="display" value="1">
+                                    <button class="cart" type="submit" name="submit" value="" style="background:transparent;color: white;border: none;">
+                                        <i class="icofont icofont-cart-alt"></i><span id="my-cart-text-wrapper">Cart</span>
+                                    </button>
+                
+                                </form>
+                                    
+                            </li>
                             <li class="list-inline-item dropdown">
                             @guest
                                 <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"

@@ -32,7 +32,7 @@ class IndexController extends Controller
             $menu_array = array();
             $menu_pizza_array = array();
             $complete_menu = array();
-            $menus = Menu::inRandomOrder()->limit(6)->get();
+            $menus = Menu::inRandomOrder()->limit(10)->get();
             //push the pagination 
             $pagination = $menus;
     

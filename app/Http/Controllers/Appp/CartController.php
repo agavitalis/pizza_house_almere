@@ -11,7 +11,7 @@ class CartController extends Controller
 {
     public function cart(Request $request)
     {
-        dd($request);
+        //dd($request);
         return view('shopping_cart');
     }
 }

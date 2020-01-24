@@ -91,7 +91,7 @@
     <!-- Order End  -->
 
     <!-- Popular Dishes Start -->
-    <div class="dishes">
+    <div class="dishes no-border">
         <div class="container">
             <div class="row">
                 <!-- Title Content Start -->
@@ -102,159 +102,32 @@
                         <i class="icofont icofont-ui-press hr-icon"></i>
                         <span class="hr-simple right"></span>
                     </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam efficitur placerat nulla, in
-                        suscipit erat sodales id. Nullam ultricies eu turpis at accumsan. Mauris a sodales mi, eget
-                        lobortis nulla.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam efficitur placerat nulla, in suscipit erat sodales id. Nullam ultricies eu turpis at accumsan. Mauris a sodales mi, eget lobortis nulla.</p>
                 </div>
                 <!-- Title Content End -->
                 <div class="col-sm-12">
                     <div class="dish owl-carousel">
+                    @foreach($popular_items as $popular_item)
                         <div class="item">
                             <!-- Box Start -->
                             <div class="box">
-                                <a href="#"><img src="{{ asset('app_assets/images/dishes/01.jpg') }}" alt="image"
-                                        title="image" class="img-fluid" /></a>
+                                <a href="#"><img src="{{$popular_item->display_picture_path}}" alt="image" title="image" height="200" width="370" class="img-responsive" /></a>
                                 <div class="caption">
-                                    <h4>Dish Name Here</h4>
-                                    <span>Lorem ipsum is simply dummy text of the printing and type setting
-                                        industry.</span>
-                                    <p>$100</p>
-                                </div>
-                            </div>
-                            <!-- Box End -->
-                        </div>
-                        <div class="item">
-                            <!-- Box Start -->
-                            <div class="box">
-                                <a href="#"><img src="{{ asset('app_assets/images/dishes/02.jpg') }}" alt="image"
-                                        title="image" class="img-fluid" /></a>
-                                <div class="caption">
-                                    <h4>Dish Name Here</h4>
-                                    <span>Lorem ipsum is simply dummy text of the printing and type setting
-                                        industry.</span>
-                                    <p>$100</p>
+                                    <h4>{{$popular_item->pizza_name}}</h4>
+                                    <span>Flavour: {{$popular_item->flavour}}</span>
+                                    <p>${{$popular_item->price}}</p>
                                 </div>
                                 <div class="form-group col-xs-12 col-md-12">
                                     <div class="text-center">
-                                        <button class="btn btn-theme btn-sm">+<i
+                                        <button class="btn btn-theme btn-xs">+<i
                                                 class="icofont icofont-cart-alt"></i></i>Add to Cart</button>
                                     </div>
                                 </div>
                             </div>
                             <!-- Box End -->
                         </div>
-                        <div class="item">
-                            <!-- Box Start -->
-                            <div class="box">
-                                <a href="#"><img src="{{ asset('app_assets/images/dishes/03.jpg') }}" alt="image"
-                                        title="image" class="img-fluid" /></a>
-                                <div class="caption">
-                                    <h4>Dish Name Here</h4>
-                                    <span>Lorem ipsum is simply dummy text of the printing and type setting
-                                        industry.</span>
-                                    <p>$100</p>
-                                </div>
-                            </div>
-                            <!-- Box End -->
-                        </div>
-                        <div class="item">
-                            <!-- Box Start -->
-                            <div class="box">
-                                <a href="#"><img src="{{ asset('app_assets/images/dishes/04.jpg') }}" alt="image"
-                                        title="image" class="img-fluid" /></a>
-                                <div class="caption">
-                                    <h4>Dish Name Here</h4>
-                                    <span>Lorem ipsum is simply dummy text of the printing and type setting
-                                        industry.</span>
-                                    <p>$100</p>
-                                </div>
-                            </div>
-                            <!-- Box End -->
-                        </div>
-                        <div class="item">
-                            <!-- Box Start -->
-                            <div class="box">
-                                <a href="#"><img src="{{ asset('app_assets/images/dishes/05.jpg') }}" alt="image"
-                                        title="image" class="img-fluid" /></a>
-                                <div class="caption">
-                                    <h4>Dish Name Here</h4>
-                                    <span>Lorem ipsum is simply dummy text of the printing and type setting
-                                        industry.</span>
-                                    <p>$100</p>
-                                </div>
-                            </div>
-                            <!-- Box End -->
-                        </div>
-                        <div class="item">
-                            <!-- Box Start -->
-                            <div class="box">
-                                <a href="#"><img src="{{ asset('app_assets/images/dishes/01.jpg') }}" alt="image"
-                                        title="image" class="img-fluid" /></a>
-                                <div class="caption">
-                                    <h4>Dish Name Here</h4>
-                                    <span>Lorem ipsum is simply dummy text of the printing and type setting
-                                        industry.</span>
-                                    <p>$100</p>
-                                </div>
-                            </div>
-                            <!-- Box End -->
-                        </div>
-                        <div class="item">
-                            <!-- Box Start -->
-                            <div class="box">
-                                <a href="#"><img src="{{ asset('app_assets/images/dishes/02.jpg') }}" alt="image"
-                                        title="image" class="img-fluid" /></a>
-                                <div class="caption">
-                                    <h4>Dish Name Here</h4>
-                                    <span>Lorem ipsum is simply dummy text of the printing and type setting
-                                        industry.</span>
-                                    <p>$100</p>
-                                </div>
-                            </div>
-                            <!-- Box End -->
-                        </div>
-                        <div class="item">
-                            <!-- Box Start -->
-                            <div class="box">
-                                <a href="#"><img src="{{ asset('app_assets/images/dishes/03.jpg') }}" alt="image"
-                                        title="image" class="img-fluid" /></a>
-                                <div class="caption">
-                                    <h4>Dish Name Here</h4>
-                                    <span>Lorem ipsum is simply dummy text of the printing and type setting
-                                        industry.</span>
-                                    <p>$100</p>
-                                </div>
-                            </div>
-                            <!-- Box End -->
-                        </div>
-                        <div class="item">
-                            <!-- Box Start -->
-                            <div class="box">
-                                <a href="#"><img src="{{ asset('app_assets/images/dishes/04.jpg') }}" alt="image"
-                                        title="image" class="img-fluid" /></a>
-                                <div class="caption">
-                                    <h4>Dish Name Here</h4>
-                                    <span>Lorem ipsum is simply dummy text of the printing and type setting
-                                        industry.</span>
-                                    <p>$100</p>
-                                </div>
-                            </div>
-                            <!-- Box End -->
-                        </div>
-                        <div class="item">
-                            <!-- Box Start -->
-                            <div class="box">
-                                <a href="#"><img src="{{ asset('app_assets/images/dishes/05.jpg') }}" alt="image"
-                                        title="image" class="img-fluid" /></a>
-                                <div class="caption">
-                                    <h4>Dish Name Here</h4>
-                                    <span>Lorem ipsum is simply dummy text of the printing and type setting
-                                        industry.</span>
-                                    <p>$100</p>
-                                </div>
-                            </div>
-                            <!-- Box End -->
-                        </div>
+                    @endforeach
+                    
                     </div>
                 </div>
             </div>

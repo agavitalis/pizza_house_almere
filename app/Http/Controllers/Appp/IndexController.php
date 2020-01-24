@@ -59,16 +59,13 @@ class IndexController extends Controller
                 }
             
             }
+          
+            $popular_items = Pizza::inRandomOrder()->limit(10)->get();
             //dd($complete_menu);
-            return view('index', compact('complete_menu','menus'));
+            return view('index', compact('complete_menu','menus','popular_items'));
     
         }
        
-    }
-
-    public function menu()
-    {
-        return view('menu');
     }
 
     public function about()

@@ -162,8 +162,8 @@ a:focus{
     font-size: 15px;
     border-radius: 4px;
     border: 1px solid #e54c2a;
-    height: 46px;
-    line-height: 34px;
+    height: 45px;
+    line-height: 20px;
 }
 .btn-theme:hover,
 .btn-theme:active:hover, 

@@ -58,16 +58,35 @@
                       <h3>Register</h3>
                       <form method="POST" action="{{ route('register') }}">
                         @csrf
-                        <div class="form-group">
-                          <label for="card-name">Name</label>
-                          <input id="card-name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus >
+        
+                        <div class="form-row">
+                          <div class="form-group col-6">
+                            <label for="card-name">Firstname</label>
+                            <input id="card-name" type="text" class="form-control @error('first_name') is-invalid @enderror" name="first_name" value="{{ old('first_name') }}" required autocomplete="first_name" autofocus >
 
-                          @error('name')
-                              <span class="invalid-feedback" role="alert">
-                                  <strong>{{ $message }}</strong>
-                              </span>
-                          @enderror
+                            @error('first_name')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
+                          </div>
+                          <div class="form-group col-6">
+                            <label for="card-name">Lastname</label>
+                            <input id="card-name" type="text" class="form-control @error('last_name') is-invalid @enderror" name="last_name" value="{{ old('last_name') }}" required autocomplete="last_name" autofocus >
+
+                            @error('last_name')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
+                          </div>
+                         
                         </div>
+
+
+
+
+
                         <div class="form-group">
                           <label for="card-email">Email address</label>
                           <input id="card-email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" >

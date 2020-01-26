@@ -76,6 +76,9 @@
               
             </script>
             <!-- //cart-js -->
+             <!-- Page Based Scripts -->
+             @yield('scripts')
+            <!-- Page Based Scripts End -->
             
         </div>
     </body>

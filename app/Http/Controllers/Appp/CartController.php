@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Models\Menu;
 use App\Models\Pizza;
+use App\Models\Contact;
 use Session;
 use Auth;
 
@@ -90,7 +91,7 @@ class CartController extends Controller
     }
 
 
-    public function shopping_payment(){
+    public function shopping_payment(Request $request){
 
         //update shipping address
         Contact::where(['user_id'=>Auth::user()->id])

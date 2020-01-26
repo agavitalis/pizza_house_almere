@@ -37,7 +37,7 @@
                             @else 
                                 <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i
-                                        class="icofont icofont-ui-user"></i>  {{ Auth::user()->name }} </a>
+                                        class="icofont icofont-ui-user"></i>  {{ Auth::user()->first_name }} </a>
                                 <ul class="dropdown-menu dropdown-menu-right drophover"
                                     aria-labelledby="dropdownMenuLink">
                                     <li class="dropdown-item">

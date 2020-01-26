@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Appp;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Mollie\Laravel\Facades\Mollie;
+use Auth;
 
 class MollieController extends Controller
 {
@@ -16,10 +17,6 @@ class MollieController extends Controller
             'value' => '100.00', // You must send the correct number of decimals, thus we enforce the use of strings
         ],
         'description' => 'My first API payment',
-        'customerId' => Auth::user()->id,
-        
-        
-        //'webhookUrl' => route('webhooks.mollie'),
         'redirectUrl' => route('paymentsuccess_mollie'),
         "metadata" => [
             "customer_first_name" => "12345",
@@ -39,24 +36,6 @@ class MollieController extends Controller
     public function paymentsuccess_mollie(Request $request) {
       
         
-
-        $payment = Mollie::api()->payments()->get($request->id);
-
-        if ($payment->isPaid()) {
-            // do your thing...
-        }
-    }
-
-    public function handle(Request $request) {
-        if (! $request->has('id')) {
-            return;
-        }
-
-        $payment = Mollie::api()->payments()->get($request->id);
-
-        if ($payment->isPaid()) {
-          dd("I arrived");
-        }
     }
 
 

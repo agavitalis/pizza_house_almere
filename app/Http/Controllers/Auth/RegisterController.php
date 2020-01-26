@@ -32,12 +32,22 @@ class RegisterController extends Controller
      */
     protected function redirectTo()
     {
+       
        if (Auth::user()->user_role == "user")
        {
+            //create a new contact
+            $contact = new Contact();
+            $contact->user_id = Auth::user()->id;
+            $contact->save();
             //take the guy to intendended URL, else return to userdashboard
             return  url()->previous('/dashboard');
        }
        else{
+           
+            //create a new contact
+            $contact = new Contact();
+            $contact->user_id = Auth::user()->id;
+            $contact->save();
             //take the guy to intendended URL, else return to admindashboard
             return  url()->previous('/admin_dashboard');
        }

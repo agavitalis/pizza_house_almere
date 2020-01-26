@@ -13,19 +13,19 @@
         <!-- Bootstrap stylesheet -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <!-- <link href="{{ secure_asset('app_assets/libs/bootstrap-4.0.0-dist/css/bootstrap.min.css') }}" rel="stylesheet"> -->
+        <!-- <link href="{{ asset('app_assets/libs/bootstrap-4.0.0-dist/css/bootstrap.min.css') }}" rel="stylesheet"> -->
         <!-- icofont -->
-        <link href="{{ secure_asset('app_assets/libs/icofont/css/icofont.css') }}" rel="stylesheet" type="text/css" />
+        <link href="{{ asset('app_assets/libs/icofont/css/icofont.css') }}" rel="stylesheet" type="text/css" />
         <!-- crousel css -->
-        <link href="{{ secure_asset('app_assets/libs/owlcarousel2/assets/owl.carousel.min.css') }}" rel="stylesheet" type="text/css" />
+        <link href="{{ asset('app_assets/libs/owlcarousel2/assets/owl.carousel.min.css') }}" rel="stylesheet" type="text/css" />
         <!-- Animated Headlines css -->
-        <link href="{{ secure_asset('app_assets/libs/animated-headlines/animated-headlines.css') }}" rel="stylesheet" type="text/css" />
+        <link href="{{ asset('app_assets/libs/animated-headlines/animated-headlines.css') }}" rel="stylesheet" type="text/css" />
        <!-- Switch Style css -->
-        <link href="{{ secure_asset('app_assets/switch-style/switch-style.css') }}" rel="stylesheet" type="text/css"/>
+        <link href="{{ asset('app_assets/switch-style/switch-style.css') }}" rel="stylesheet" type="text/css"/>
         <!-- Theme Stylesheet -->
-        <link href="{{ secure_asset('app_assets/css/style.css') }}" rel="stylesheet" type="text/css"/>
+        <link href="{{ asset('app_assets/css/style.css') }}" rel="stylesheet" type="text/css"/>
         <!-- Mini Cart CSS -->
-        <link href="{{ secure_asset('app_assets/css/minicart.css') }}" rel="stylesheet" type="text/css"/>
+        <link href="{{ asset('app_assets/css/minicart.css') }}" rel="stylesheet" type="text/css"/>
         <!-- Switch Color Style css -->
         <link href="#" data-style="styles" rel="stylesheet">
     </head>
@@ -44,27 +44,27 @@
             <!-- Menu End -->
             
             <!-- jquery -->
-            <script src="{{ secure_asset('app_assets/libs/jquery/jquery.min.js') }}"></script>
+            <script src="{{ asset('app_assets/libs/jquery/jquery.min.js') }}"></script>
             <!-- jquery Validate -->
-            <script src="{{ secure_asset('app_assets/libs/jquery-validation/jquery.validate.min.js') }}"></script>
+            <script src="{{ asset('app_assets/libs/jquery-validation/jquery.validate.min.js') }}"></script>
             <!-- popper js -->
-            <script src="{{ secure_asset('app_assets/libs/popper/popper.min.js') }}"></script>
+            <script src="{{ asset('app_assets/libs/popper/popper.min.js') }}"></script>
             <!-- bootstrap js -->
-            <script src="{{ secure_asset('app_assets/libs/bootstrap-4.0.0-dist/js/bootstrap.min.js') }}"></script>
+            <script src="{{ asset('app_assets/libs/bootstrap-4.0.0-dist/js/bootstrap.min.js') }}"></script>
              <!-- cart-js -->
-             <script src="{{secure_asset('app_assets/js/minicart.js')}}"></script>
+             <script src="{{asset('app_assets/js/minicart.js')}}"></script>
             <!-- owlcarousel js -->
-            <script src="{{ secure_asset('app_assets/libs/owlcarousel2/owl.carousel.min.js') }}"></script>
+            <script src="{{ asset('app_assets/libs/owlcarousel2/owl.carousel.min.js') }}"></script>
             <!--inview js code-->
-            <script src="{{ secure_asset('app_assets/libs/jquery.inview/jquery.inview.min.js') }}"></script>
+            <script src="{{ asset('app_assets/libs/jquery.inview/jquery.inview.min.js') }}"></script>
             <!--CountTo js code-->
-            <script src="{{ secure_asset('app_assets/libs/jquery.countTo/jquery.countTo.js') }}"></script>
+            <script src="{{ asset('app_assets/libs/jquery.countTo/jquery.countTo.js') }}"></script>
             <!-- Animated Headlines js code-->
-            <script src="{{ secure_asset('app_assets/libs/animated-headlines/animated-headlines.js') }}"></script>
+            <script src="{{ asset('app_assets/libs/animated-headlines/animated-headlines.js') }}"></script>
               <!-- Switch Style js -->
-            <script src="{{ secure_asset('app_assets/switch-style/switch-style.js') }}"></script>
+            <script src="{{ asset('app_assets/switch-style/switch-style.js') }}"></script>
             <!--internal js-->
-            <script src="{{ secure_asset('app_assets/js/internal.js') }}"></script>
+            <script src="{{ asset('app_assets/js/internal.js') }}"></script>
 
            
             <script>

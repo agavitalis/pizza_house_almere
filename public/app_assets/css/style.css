@@ -2751,7 +2751,7 @@ footer .powered .social li a:hover i{
     font-weight:600;
     color:#000;
 }
-.mycart #tab-cart td button{
+.mycart #tab-cart td .rmv{
     background:none;
     border:none;
     box-shadow:none;

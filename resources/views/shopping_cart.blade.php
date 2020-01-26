@@ -36,8 +36,9 @@
                             <div class="bor"></div>
                             <div class="tab-content">
                                 <div class="tab-pane active" id="tab-cart">
-                                    <form method="post" enctype="multipart/form-data">
-                                        <h2>You have <span>2 items</span> in your order.</h2>
+                                    <form method="post" action="/shopping_address">
+                                        @csrf
+                                        <h2>You have <span>{{$count}} items</span> in your order.</h2>
                                         <div class="table-responsive-md">
                                             <table class="table table-bordered">
                                                 <thead>
@@ -50,14 +51,18 @@
                                                     </tr>
                                                 </thead>
                                                 <tbody>
+                                                    @php $count = 1; @endphp
+                                                    @foreach($cart as $cart)
+                                                    <input type="hidden" name="pizza_id_{{$count}}" value="{{$cart->id}}">
+                
                                                     <tr>
                                                         <td>
                                                             <a href="#">
-                                                                <img src="assets/images/our-menu/01.jpg" class="img-fluid" alt="thumb" title="thumb" />
+                                                                <img src="{{$cart->display_picture_path}}" class="img-responsive" alt="thumb" title="thumb" height='130px' width='130px' />
                                                             </a>
                                                             <div class="name">
-                                                                <h4>Food Title Here</h4>
-                                                                <p>Curses / Dictum / Risus</p>
+                                                                <h4>{{$cart->pizza_name}}</h4>
+                                                                <p>Flavour: {{$cart->flavour}}</p>
                                                                 <div class="rating">
                                                                     <i class="icofont icofont-star"></i>
                                                                     <i class="icofont icofont-star"></i>
@@ -67,62 +72,34 @@
                                                                 </div>
                                                             </div>
                                                         </td>
-                                                        <td class="text-center">$ 23.00</td>
+                                                        <td class="text-center">$<span class="total">{{$cart->price}}<span></td>
                                                         <td class="text-center">
                                                             <p class="qtypara">
                                                                 <span id="minus1" class="minus"><i class="icofont icofont-minus"></i></span>
-                                                                <input type="text" name="quantity" value="1" size="2" id="input-quantity1" class="form-control qty" />
+                                                                <input type="text" name="pizza_count_{{$count}}" value="1" size="2"  class="form-control qty"/>
                                                                 <span id="add1" class="add"><i class="icofont icofont-plus"></i></span>
-                                                                <input type="hidden" name="product_id" value="1" />
                                                             </p>
                                                         </td>
-                                                        <td class="text-center">$23.00</td>
+                                                        <td class="text-center">$<span class="sub_total">{{$cart->price}}</span></td>
                                                         <td class="text-center">
-                                                            <button type="button"><i class="icofont icofont-close-line"></i></button>
+                                                            <button class='rmv' type="button"><i class="icofont icofont-close-line"></i></button>
                                                         </td>
                                                     </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <a href="#">
-                                                                <img src="assets/images/our-menu/01.jpg" class="img-fluid" alt="thumb" title="thumb" />
-                                                            </a>
-                                                            <div class="name">
-                                                                <h4>Food Title Here</h4>
-                                                                <p>Curses / Dictum / Risus</p>
-                                                                <div class="rating">
-                                                                    <i class="icofont icofont-star"></i>
-                                                                    <i class="icofont icofont-star"></i>
-                                                                    <i class="icofont icofont-star"></i>
-                                                                    <i class="icofont icofont-star"></i>
-                                                                    <i class="icofont icofont-star"></i>
-                                                                </div>
-                                                            </div>
-                                                        </td>
-                                                        <td class="text-center">$23.50</td>
-                                                        <td class="text-center">
-                                                            <p class="qtypara">
-                                                                <span id="minus2" class="minus"><i class="icofont icofont-minus"></i></span>
-                                                                <input type="text" name="quantity" value="1" size="2" id="input-quantity2" class="form-control qty" />
-                                                                <span id="add2" class="add"><i class="icofont icofont-plus"></i></span>
-                                                                <input type="hidden" name="product_id" value="1" />
-                                                            </p>
-                                                        </td>
-                                                        <td class="text-center">$23.50</td>
-                                                        <td class="text-center">
-                                                            <button type="button"><i class="icofont icofont-close-line"></i></button>
-                                                        </td>
-                                                    </tr>
+                                                    @php $count ++ ; @endphp
+                                                    @endforeach
+                                                   
                                                     <tr>
                                                         <td colspan="5">
-                                                            <h3 class="text-right">SUBTOTAL - $46.50</h3>
+                                                            <h3 class="text-right">TOTAL - $<span id="total_price">00.00</span></h3>
                                                             <div class="buttons float-left">
-                                                                <a href="shop.html" class="btn btn-theme btn-md btn-wide">Continue Shopping</a>
+                                                                <a href="/menu" class="btn btn-theme btn-md btn-wide">Continue Shopping</a>
                                                             </div>
                                                             <div class="buttons float-right">
-                                                                <a href="#tab-info" data-toggle="tab" class="btn btn-theme btn-md btn-wide">Checkout</a>
+                                                                <button type="submit"  class="btn btn-theme btn-md btn-wide">Checkout</button>
                                                             </div>
                                                         </td>
                                                     </tr>
+
                                                 </tbody>
                                             </table>
                                         </div>

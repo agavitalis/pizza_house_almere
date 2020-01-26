@@ -116,16 +116,75 @@ $(function () {
 
     /*Product Quantity Plus/Minus Start */
     $(function () {
+        function addCommas(x) {
+            return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+        }
+        
+
         $('.add').on('click',function(){
-                var $qty=$(this).closest('p').find('.qty');
+                var $qty=$(this).closest('tr').find('.qty');
                 var currentVal = parseInt($qty.val());
-                        $qty.val(currentVal + 1);
+                var updateVal = currentVal + 1;
+                $qty.val(updateVal);
+
+
+                //update subtotal
+                var $total=$(this).closest('tr').find('.total');
+                var currentTotal = parseInt($total.text());
+
+                var $subtotal=$(this).closest('tr').find('.sub_total');
+                var currentSubtotal = parseInt($subtotal.text());
+               
+                $subtotal.text(currentTotal + currentSubtotal)
+
+                //recalculate the total price
+                total_price();
+
         });
+
         $('.minus').on('click',function(){
                 var $qty=$(this).closest('p').find('.qty');
                 var currentVal = parseInt($qty.val());
-                $qty.val(currentVal - 1);					
+                var updateVal = currentVal - 1;
+                
+               if(updateVal != 0){
+                    $qty.val(updateVal);
+
+                    //update subtotal
+                    var $total=$(this).closest('tr').find('.total');
+                    var currentTotal = parseInt($total.text());
+
+                    var $subtotal=$(this).closest('tr').find('.sub_total');
+                    var currentSubtotal = parseInt($subtotal.text());
+                
+                    $subtotal.text(currentSubtotal - currentTotal)
+
+
+                    //recalculate the total price
+                    total_price();
+               }
+               
+
         });
+
+        //calculate the total price name
+        function total_price(){
+            let total_price = 0;
+            $('.sub_total').each(function() {
+
+                let price = parseInt($(this).text().replace(',', ''));
+                total_price = price + total_price;
+            
+            });
+
+            //populate the total price
+            $('#total_price').text(addCommas(total_price));
+            
+        }
+
+        //call this, whenever the page refreshes
+        total_price();
+
     });
     /*Product Quantity Plus/Minus End */
     

@@ -11,7 +11,11 @@ Route::group(['namespace'=>"Appp"],function(){
     Route::get('/search', 'IndexController@search')->name('search');
     Route::get('/pizza_details', 'IndexController@pizza_details')->name('pizza_details');
 
-    Route::post('/cart', 'CartController@cart')->name('cart');
+    Route::match(['GET','POST'],'/cart/{cart_id?}', 'CartController@cart')->name('cart');
+    Route::match(['GET','POST'],'/shopping_address', 'CartController@shopping_address')->name('shopping_address');
+    Route::match(['GET','POST'],'/shopping_payment', 'CartController@shopping_payment')->name('shopping_payment');
+    
+    Route::match(['GET','POST'],'/complete_order', 'TransactionController@transaction')->name('complete_transaction');
     
 });
 

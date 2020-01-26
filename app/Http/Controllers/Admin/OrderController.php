@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Models\Menu;
 use App\Models\Pizza;
+use App\Models\Order;
 use Auth;
 
 class OrderController extends Controller
@@ -19,7 +20,9 @@ class OrderController extends Controller
 
         if($request->isMethod('GET')){
 
-            return view('admin.orders');
+            $orders = Order::all();
+            return view('admin.orders',compact('orders'));
+
         }
 
        
@@ -29,6 +32,8 @@ class OrderController extends Controller
 
         if($request->isMethod('GET')){
 
+            $orders = Order::all();
+            return view('admin.orders',compact('orders'));
             return view('admin.create_pizza');
         }
 

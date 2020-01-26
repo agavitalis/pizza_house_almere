@@ -18,6 +18,8 @@ Route::group(['namespace'=>"Appp"],function(){
     Route::match(['GET','POST'],'/complete_order', 'TransactionController@transaction')->name('complete_transaction');
     Route::match(['GET','POST'],'/prepare_payment', 'MollieController@preparepayment_mollie')->name('preparepayment_mollie');
     Route::match(['GET','POST'],'/payment_success/{id?}', 'MollieController@paymentsuccess_mollie')->name('paymentsuccess_mollie');
+    
+    Route::match(['GET','POST'],'/thank_you', 'TransactionController@thank_you')->name('thank_you');
   
     
 });

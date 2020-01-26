@@ -48,19 +48,19 @@
                                                
                                                     <fieldset>	
                                                         <div class="form-group">
-                                                            <input name="country" value="" placeholder="Country" id="input-country" class="form-control" type="text" required>
+                                                            <input name="country" value="{{$user_address->country}}" placeholder="Country" id="input-country" class="form-control" type="text" required>
                                                         </div>
                                                         <div class="form-group">
-                                                            <input name="state" value="" placeholder="State" id="input-state" class="form-control" type="text" required>
+                                                            <input name="state" value="{{$user_address->state}}" placeholder="State" id="input-state" class="form-control" type="text" required>
                                                         </div>
                                                         <div class="form-group">
-                                                            <input name="city" value="" placeholder="City" id="input-city" class="form-control" type="text" required>
+                                                            <input name="city" value="{{$user_address->city}}" placeholder="City" id="input-city" class="form-control" type="text" required>
                                                         </div>
                                                         <div class="form-group">
-                                                            <input name="code" value="" placeholder="Zip Code" id="input-code" class="form-control" type="text" required>
+                                                            <input name="code" value="{{$user_address->zip_code}}" placeholder="Zip Code" id="input-code" class="form-control" type="text" required>
                                                         </div>
                                                         <div class="form-group">
-                                                            <input name="address" value="" placeholder="Address" id="input-address" class="form-control" type="text" required>
+                                                            <input name="address" value="{{$user_address->address}}" placeholder="Address" id="input-address" class="form-control" type="text" required>
                                                         </div>
                                                     </fieldset>
                                                
@@ -72,16 +72,16 @@
                                               
                                                     <fieldset>	
                                                         <div class="form-group">
-                                                            <input name="firstname" value="" placeholder="First Name" id="input-firstname" class="form-control" type="text" required>
+                                                            <input name="firstname" value="{{Auth::user()->first_name}}" placeholder="First Name" id="input-firstname" class="form-control" type="text" readonly>
                                                         </div>
                                                         <div class="form-group">
-                                                            <input name="lastname" value="" placeholder="Last Name" id="input-lastname" class="form-control" type="text" required>
+                                                            <input name="lastname" value="{{Auth::user()->last_name}}" placeholder="Last Name" id="input-lastname" class="form-control" type="text" readonly>
                                                         </div>
                                                         <div class="form-group">
-                                                            <input name="email" value="" placeholder="Email" id="input-email" class="form-control" type="text" required>
+                                                            <input name="email" value="{{Auth::user()->email}}" placeholder="Email" id="input-email" class="form-control" type="text"readonly>
                                                         </div>
                                                         <div class="form-group">
-                                                            <input name="phone" value="" placeholder="Phone Number" id="input-phone" class="form-control" type="text" required>
+                                                            <input name="phone" value="{{$user_address->phone}}" placeholder="Phone Number" id="input-phone" class="form-control" type="text" required>
                                                         </div>
                                                     </fieldset>
                                                 
